@@ -54,7 +54,9 @@
 
   #explorer h1 {
     margin: 15px 31px 5px;
-  }
+    padding-top: 35px;
+    text-align: center;
+}
   #fonctionnement {
     margin-left: 20px;
   }
