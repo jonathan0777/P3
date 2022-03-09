@@ -31,10 +31,14 @@
 
   header nav {
     background: #ebe9e9ef;
-    /* font-size: 28px; */
     text-align: right;
   }
 
+  header nav .moteur {
+    display: flex;
+    justify-content: center;
+
+  }
   header nav input {
     border: none;
     font-size: 17px;
@@ -45,10 +49,12 @@
   header nav i {
     font-size: 17px;
     margin-right: 10px;
+      margin-left: 50px;
+    padding: 10px 4px 10px 10px;
   }
 
   #explorer {
-    padding: 0 20px;
+    padding: 0 20px 25px;
     background-color: #f2f2f2;
   }
 
@@ -56,15 +62,12 @@
     margin: 15px 31px 5px;
     padding-top: 35px;
     text-align: center;
-}
-  #fonctionnement {
-    margin-left: 20px;
   }
 
   #explorer h2 {
     font-size: 14px;
     margin: 10px 14px 15px;
-    font-weight: 400;
+    font-weight: 300;
     text-align: center;
   }
 
@@ -75,29 +78,64 @@
     background-color: white;
     transition: 1s;
   }
-  
+
   #explorer .monbouton {
     color: white;
     margin: 0px 0px;
-    padding: 0px 0px;
+    padding: 19px 47px;
     border-radius: 29px;
-    border: 0px solid #0065fc;
+    display: flex;
+    justify-content: center;
   }
+
   
+
   #explorer .monbouton a {
-    background-color: #9356DC;
+    background-color: #9356dc;
     display: block;
     color: white;
     margin: 0px 0px;
-    padding: 18px;
+    padding: 13px;
     border-radius: 29px;
-    border: 1px solid #FF79DA;
+    border: 1px solid #ff79da;
     text-decoration: none;
     text-align: center;
-    background: #FF79DA;
-
+    font-size: 14px;
+    background: #ff79da;
   }
 
+  #fonctionnement {
+    margin-left: 20px;
+  }
+
+
+  
+
+  #fonctionnement article {
+    border: 2px solid transparent;
+    display: flex;
+    align-content: space-between;
+    justify-content: space-evenly;
+    box-shadow: 0px 0px 10px 0px gainsboro;
+    border-radius: 18px;
+    padding: 20px 0 20px 0;
+    margin: 20px;
+  
+  
+}
+#fonctionnement .monbouton a {
+
+color: black;
+font-size: 15px;
+font-weight: 700;
+
+ }
+
+ #fonctionnement .monbouton i {
+
+  color: grey;
+  
+   }
   .restaurants {
     background-color: #f2f2f2;
     padding: 20px;
@@ -114,7 +152,18 @@
   .restaurants article {
     background: white;
     border-radius: 18px;
-  }
+    box-shadow: 0px 0px 12px 0px gainsboro;
+    margin: 20px 0;
+}
+  .restaurants h3  {
+    color: black;
+    margin: 12px 0 5px 20px;
+}
+  .restaurants p  {
+    color: black;
+    padding: 0px 0 9px 20px;
+    margin: 0;
+}
 
   footer {
     width: 100%;
