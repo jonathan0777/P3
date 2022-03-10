@@ -37,7 +37,6 @@
   header nav .moteur {
     display: flex;
     justify-content: center;
-
   }
   header nav input {
     border: none;
@@ -49,7 +48,7 @@
   header nav i {
     font-size: 17px;
     margin-right: 10px;
-      margin-left: 50px;
+    margin-left: 50px;
     padding: 10px 4px 10px 10px;
   }
 
@@ -88,8 +87,6 @@
     justify-content: center;
   }
 
-  
-
   #explorer .monbouton a {
     background-color: #9356dc;
     display: block;
@@ -108,9 +105,6 @@
     margin-left: 20px;
   }
 
-
-  
-
   #fonctionnement article {
     border: 2px solid transparent;
     display: flex;
@@ -119,23 +113,18 @@
     box-shadow: 0px 0px 10px 0px gainsboro;
     border-radius: 18px;
     padding: 20px 0 20px 0;
-    margin: 20px;
-  
-  
-}
-#fonctionnement .monbouton a {
+    margin:20px 20px 20px 0;
 
-color: black;
-font-size: 15px;
-font-weight: 700;
+  }
+  #fonctionnement .monbouton a {
+    color: black;
+    font-size: 15px;
+    font-weight: 700;
+  }
 
- }
-
- #fonctionnement .monbouton i {
-
-  color: grey;
-  
-   }
+  #fonctionnement .monbouton i {
+    color: grey;
+  }
   .restaurants {
     background-color: #f2f2f2;
     padding: 20px;
@@ -154,16 +143,16 @@ font-weight: 700;
     border-radius: 18px;
     box-shadow: 0px 0px 12px 0px gainsboro;
     margin: 20px 0;
-}
-  .restaurants h3  {
+  }
+  .restaurants h3 {
     color: black;
     margin: 12px 0 5px 20px;
-}
-  .restaurants p  {
+  }
+  .restaurants p {
     color: black;
     padding: 0px 0 9px 20px;
     margin: 0;
-}
+  }
 
   footer {
     width: 100%;
@@ -196,6 +185,7 @@ font-weight: 700;
   #footer i {
     color: white;
   }
+  
   footer #footer a {
     color: white;
   }
