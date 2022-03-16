@@ -1,1 +1,196 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@media screen and (max-width: 768px) {
+    * {
+      box-sizing: border-box;
+      font-family: "Roboto", sans-serif;
+      text-decoration: none;
+    }
+  
+    body {
+      margin: 0;
+      max-width: 1200px;
+      margin: 0 auto;
+      width: 100%;
+      height: auto;
+    }
+    header {
+      width: 100%;
+      height: 102px;
+    }
+    header #logo {
+      width: 100%;
+      text-align: center;
+    }
+  
+    header #logo img {
+      width: 100%;
+      min-width: 120px;
+      max-width: 189px;
+      margin: 20px;
+      object-fit: cover;
+    }
+  
+    header nav {
+      background: #ebe9e9ef;
+      text-align: right;
+    }
+  
+    header nav .moteur {
+      display: flex;
+      justify-content: center;
+    }
+    header nav input {
+      border: none;
+      font-size: 17px;
+      font-weight: 600;
+      background: #ebe9e9ef;
+      padding: 10px 0;
+    }
+    header nav i {
+      font-size: 17px;
+      margin-right: 10px;
+      margin-left: 50px;
+      padding: 10px 4px 10px 10px;
+    }
+  
+    #explorer {
+      padding: 0 20px 25px;
+      background-color: #f2f2f2;
+    }
+  
+    #explorer h1 {
+      margin: 15px 31px 5px;
+      padding-top: 35px;
+      text-align: center;
+    }
+  
+    #explorer h2 {
+      font-size: 14px;
+      margin: 10px 14px 15px;
+      font-weight: 300;
+      text-align: center;
+    }
+  
+    #recherche .monbouton:hover {
+      color: black;
+      border: 2px solid #f2f2f2;
+      transform: scale(1);
+      background-color: white;
+      transition: 1s;
+    }
+  
+    #explorer .monbouton {
+      color: white;
+      margin: 0px 0px;
+      padding: 19px 47px;
+      border-radius: 29px;
+      display: flex;
+      justify-content: center;
+    }
+  
+    #explorer .monbouton a {
+      background-color: #9356dc;
+      display: block;
+      color: white;
+      margin: 0px 0px;
+      padding: 13px;
+      border-radius: 29px;
+      border: 1px solid #ff79da;
+      text-decoration: none;
+      text-align: center;
+      font-size: 14px;
+      background: #ff79da;
+    }
+  
+    #fonctionnement {
+      margin-left: 20px;
+    }
+  
+    #fonctionnement article {
+      border: 2px solid transparent;
+      display: flex;
+      align-content: space-between;
+      justify-content: space-evenly;
+      box-shadow: 0px 0px 10px 0px gainsboro;
+      border-radius: 18px;
+      padding: 20px 0 20px 0;
+      margin:20px 20px 20px 0;
+  
+    }
+    #fonctionnement .monbouton a {
+      color: black;
+      font-size: 15px;
+      font-weight: 700;
+    }
+  
+    #fonctionnement .monbouton i {
+      color: grey;
+    }
+    .restaurants {
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+    .restaurants div img {
+      object-fit: cover;
+      width: 100%;
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 18px 18px 0 0;
+    }
+  
+    .restaurants article {
+      background: white;
+      border-radius: 18px;
+      box-shadow: 0px 0px 12px 0px gainsboro;
+      margin: 20px 0;
+    }
+    .restaurants h3 {
+      color: black;
+      margin: 12px 0 5px 20px;
+    }
+    .restaurants p {
+      color: black;
+      padding: 0px 0 9px 20px;
+      margin: 0;
+    }
+  
+    footer {
+      width: 100%;
+      height: auto;
+      background-color: #404040;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      padding-left: 20px;
+    }
+  
+    footer #logo2 {
+      width: 100%;
+    }
+  
+    footer #logo2 img {
+      width: 100%;
+      min-width: 120px;
+      max-width: 120px;
+  
+      object-fit: cover;
+      height: auto;
+      filter: invert(1);
+    }
+    #footer {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    #footer i {
+      color: white;
+    }
+  
+    footer #footer a {
+      color: white;
+    }
+    footer #footer #mentions {
+      display: flex;
+      flex-direction: column;
+    }
+  }
