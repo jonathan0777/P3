@@ -103,7 +103,7 @@
     background: #ff79da;
   }
   #fonctionnement {
-    margin-left: 20px;
+    margin: 20px;
   }
   #fonctionnement article {
     border: 2px solid transparent;
@@ -119,7 +119,16 @@
             box-shadow: 0px 0px 10px 0px gainsboro;
     border-radius: 18px;
     padding: 20px 0 20px 0;
-    margin: 20px 20px 20px 0;
+    margin: 20px 0px 20px 0;
+  }
+  #fonctionnement .monbouton {
+    border-radius: 18px;
+  }
+  #fonctionnement .monbouton:hover {
+    border: 0px solid #ff79da;
+    background-color: #ff79da;
+    -webkit-transition: 1s;
+    transition: 1s;
   }
   #fonctionnement .monbouton a {
     color: black;
@@ -128,6 +137,9 @@
   }
   #fonctionnement .monbouton i {
     color: grey;
+  }
+  #fonctionnement .monbouton i:hover {
+    color: #ff79da;
   }
   .restaurants {
     background-color: #f2f2f2;
@@ -174,7 +186,7 @@
   }
   footer #logo2 {
     width: 100%;
-    font-family: 'Shrikhand', cursive;
+    font-family: "Shrikhand", cursive;
     color: white;
   }
   footer #logo2 img {
@@ -224,11 +236,14 @@
     object-fit: cover;
     border-radius: 18px 18px 0 0;
   }
-  article {
+  #menu {
+    border-radius: 18px;
+    background: gray;
+    padding: 20px 5px 0 5px;
+  }
+  #menu article {
     border: 2px solid transparent;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: block;
     -ms-flex-line-pack: justify;
     align-content: space-between;
     -webkit-box-pack: space-evenly;
@@ -237,16 +252,26 @@
     -webkit-box-shadow: 0px 0px 10px 0px gainsboro;
     box-shadow: 0px 0px 10px 0px gainsboro;
     border-radius: 18px;
-    padding: 20px 0 20px 0;
-    margin: 20px;
+    margin: 20px 5px;
+    padding-left: 10px;
   }
-  .monbouton a {
+  #menu .monbouton a {
     color: black;
     font-size: 15px;
     font-weight: 700;
   }
-  .monbouton i {
+  #menu .monbouton i {
     color: grey;
+  }
+  #menu h2 {
+    font-size: 15px;
+    margin: 5px;
+    font-weight: 600;
+  }
+  #menu h3 {
+    font-size: 12px;
+    font-weight: 100;
+    margin: 5px;
   }
   .commander a {
     background-color: #9356dc;
