@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+
   * {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -300,5 +300,5 @@
     -ms-flex-pack: center;
     justify-content: center;
   }
-}
+
 /*# sourceMappingURL=style.css.map */
