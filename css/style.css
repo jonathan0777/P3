@@ -1,4 +1,4 @@
-
+@media screen and (max-width: 768px) {
   * {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -10,11 +10,9 @@
     max-width: 1200px;
     margin: 0 auto;
     width: 100%;
-    height: auto;
   }
   header {
     width: 100%;
-    height: 102px;
   }
   header #logo {
     width: 100%;
@@ -225,7 +223,6 @@
   }
   header {
     width: 100%;
-    height: auto;
   }
   header nav div img {
     -o-object-fit: cover;
@@ -263,14 +260,15 @@
   #menu .monbouton i {
     color: grey;
   }
-  #menu > h2 {
+  #menu h2 {
     font-size: 15px;
     margin: 5px;
     font-weight: 600;
-    border-bottom: 3px solid #0065fc;
-    width: 33px;
   }
- 
+  #menu h2:hover {
+    color: red;
+    border-bottom: 30px solid #0065fc;
+  }
   #menu h3 {
     font-size: 12px;
     font-weight: 100;
@@ -300,5 +298,5 @@
     -ms-flex-pack: center;
     justify-content: center;
   }
-
+}
 /*# sourceMappingURL=style.css.map */
