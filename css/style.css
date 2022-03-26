@@ -310,10 +310,8 @@ header nav div img {
   -o-object-fit: cover;
   object-fit: cover;
   width: 100%;
-  width: 100%;
-  height: 150px;
+  height: 300px;
   object-fit: cover;
-  border-radius: 18px 18px 0 0;
 }
 
 header #page #logo {
@@ -341,6 +339,8 @@ header #page #logo {
   border-radius: 18px;
   background: #f2f2f2;
   padding: 20px 5px 0 5px;
+  position: relative;
+  margin: -23px 0px;
 }
 
 #menu h1 {
@@ -425,10 +425,106 @@ header #page #logo {
   justify-content: center;
 }
 
-#loader {
-  color: black;
-  border: 6px solid black;
+.loader {
+  width: 100px;
+  height: 100px;
   position: absolute;
+  margin: 379px 468px;
+}
+
+.loader div {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 10px solid transparent;
+  border-top-color: #ff79da;
+  border-radius: 50px;
+  -webkit-animation: rotation1 1.2s linear infinite;
+          animation: rotation1 1.2s linear infinite;
+}
+
+.loader div:nth-child(2) {
+  border: 10px solid transparent;
+  border-bottom-color: #9356dc;
+}
+
+@-webkit-keyframes rotation1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    border-width: 10px;
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    border-width: 1px;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    border-width: 10px;
+  }
+}
+
+@keyframes rotation1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    border-width: 10px;
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    border-width: 1px;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    border-width: 10px;
+  }
+}
+
+.monbouton {
+  -webkit-animation: slide-in-top 2s cubic-bezier(1, 0.7, 0.15, 1) both;
+          animation: slide-in-top 2s cubic-bezier(1, 0.7, 0.15, 1) both;
+}
+
+@-webkit-keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-40px);
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(4000);
+    transform: translateY(4000);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-40px);
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(4000);
+    transform: translateY(4000);
+    opacity: 1;
+  }
 }
 
 /*
@@ -437,6 +533,4 @@ header #page #logo {
   to { padding-left:200px}
 }
 */
-@-webkit-keyframes rotation {}
-@keyframes rotation {}
 /*# sourceMappingURL=style.css.map */
