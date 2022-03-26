@@ -353,7 +353,7 @@ header #page #logo {
   border: 10px solid transparent;
   border-top-color:#ff79da;
   border-radius: 50px;
-  animation: rotation1 1.2s linear infinite
+  animation: rotation1 3.2s both;
 
 }
 .loader div:nth-child(2){
@@ -362,12 +362,13 @@ header #page #logo {
 }
 @keyframes rotation1{
   0% { transform: rotate(0deg); border-width: 10px }  
-  50% { transform: rotate(180deg); border-width: 1px } 
-  100% { transform: rotate(360deg); border-width: 10px }
+  50% { transform: rotate(420deg); border-width: 5px } 
+  100% { transform: rotate(860deg); border-width: 10px;
+  opacity: 0; }
   }
 
 
-.monbouton {
+#menu .monbouton {
 
 animation: slide-in-top 2s cubic-bezier(1, 0.700, 0.150, 1) both;
 
