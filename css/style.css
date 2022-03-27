@@ -56,6 +56,10 @@ header nav input {
   padding: 10px 0;
 }
 
+input:focus-visible {
+  outline: none;
+}
+
 header nav i {
   font-size: 17px;
   margin-right: 10px;
@@ -81,12 +85,9 @@ header nav i {
   text-align: center;
 }
 
-#recherche .monbouton:hover {
-  color: black;
-  border: 2px solid #f2f2f2;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  background-color: white;
+.monbouton a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
   -webkit-transition: 1s;
   transition: 1s;
 }
@@ -102,6 +103,8 @@ header nav i {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: 2s;
+  transition: 2s;
 }
 
 #explorer .monbouton a {
