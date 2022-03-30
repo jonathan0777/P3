@@ -342,6 +342,13 @@ header #page #logo {
   color: black;
 }
 
+#retour i:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
 #menu {
   border-radius: 18px 18px 0 0;
   background: #f2f2f2;

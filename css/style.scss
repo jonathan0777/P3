@@ -253,6 +253,12 @@ header #page #logo {
   color: black;
 }
 
+#retour i:hover {
+  transform: scale(1.1);
+  transition: 1s;
+
+}
+
 #menu {
   border-radius: 18px 18px 0 0;
   background: #f2f2f2;
