@@ -202,6 +202,13 @@ header nav i {
   margin: 20px 0;
 }
 
+.restaurants article:hover {
+  -webkit-transform: scale(1.031);
+          transform: scale(1.031);
+  -webkit-transition: 20ms;
+  transition: 20ms;
+}
+
 .contain {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -225,16 +232,44 @@ header nav i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .coeur {
-  width: 17%;
+  padding: 10px;
 }
 
-.coeur i {
+.coeur i.far.fa-heart {
   padding-top: 23px;
-  font-size: 20px;
+  font-size: 24px;
   color: black;
+}
+
+.coeur i.far:hover {
+  -webkit-transition-delay: 30ms;
+          transition-delay: 30ms;
+  opacity: 0;
+  color: linear-gradient(164deg, #ff79da 0%, #9356dc 81%);
+}
+
+i.fas.fa-heart {
+  padding-top: 23px;
+  font-size: 27px;
+  margin: -1px -3px 0px -25px;
+  color: black;
+  position: absolute;
+  -webkit-transition-delay: 30ms;
+          transition-delay: 30ms;
+  opacity: 0;
+}
+
+.coeur i.fas:hover {
+  -webkit-transition-delay: 30ms;
+          transition-delay: 30ms;
+  opacity: 1;
+  background-color: linear-gradient(164deg, #ff79da 0%, #9356dc 81%);
 }
 
 .restaurants p {
@@ -354,13 +389,24 @@ header #page #logo {
   background: #f2f2f2;
   padding: 20px 5px 0 5px;
   position: relative;
-  margin: -23px 0px 10px;
+  margin: -23px 0px 0px;
 }
 
 #menu h1 {
   font-family: Shrikhand;
   font-size: 24px;
   margin: 10px 0 20px 15px;
+  font-weight: normal;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#menu h1 {
+  padding-right: 10px;
 }
 
 #menu article {
@@ -450,7 +496,7 @@ header #page #logo {
 .loader {
   width: 100px;
   height: 100px;
-  position: absolute;
+  position: fixed;
   margin: 330px 560px;
 }
 
