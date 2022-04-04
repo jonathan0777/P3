@@ -349,11 +349,8 @@ header {
 }
 
 header nav div img {
-  -o-object-fit: cover;
-  object-fit: cover;
   width: 100%;
   height: 300px;
-  object-fit: cover;
 }
 
 header #page #logo {
@@ -411,18 +408,37 @@ header #page #logo {
 
 #menu article {
   border: 2px solid transparent;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-line-pack: justify;
-  align-content: space-between;
   -webkit-box-pack: space-evenly;
   -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
+  justify-content: space-between;
   -webkit-box-shadow: 0px 0px 10px 0px gainsboro;
   box-shadow: 0px 0px 10px 0px gainsboro;
   border-radius: 18px;
   margin: 20px 5px;
-  padding-left: 10px;
   background-color: white;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.global {
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
 }
 
 #menu article:hover {
@@ -439,7 +455,7 @@ header #page #logo {
 }
 
 #menu .monbouton i {
-  color: grey;
+  color: white;
 }
 
 #menu > h2 {
@@ -464,6 +480,37 @@ header #page #logo {
   font-size: 12px;
   font-weight: 100;
   margin: 5px;
+}
+
+#menu .prix {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* -webkit-box-pack: end; */
+  -ms-flex-pack: end;
+  -webkit-box-pack: end;
+          justify-content: flex-end;
+  width: 80%;
+}
+
+aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  /* margin: 0px 0px 10px 30px; */
+  width: 30%;
+  border-radius: 0 18px 18px 0;
+}
+
+aside i {
+  color: white;
+}
+
+aside:hover {
+  background-color: #99E2D0;
 }
 
 .commander a {
@@ -522,18 +569,18 @@ header #page #logo {
   0% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
-    border-width: 10px;
+    border-width: 2px;
   }
   50% {
-    -webkit-transform: rotate(420deg);
-            transform: rotate(420deg);
-    border-width: 5px;
+    -webkit-transform: rotate(120deg);
+            transform: rotate(120deg);
+    border-width: 4px;
   }
   100% {
-    -webkit-transform: rotate(860deg);
-            transform: rotate(860deg);
-    border-width: 10px;
-    opacity: 0;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    border-width: 6px;
+    opacity: 1;
   }
 }
 
@@ -541,24 +588,48 @@ header #page #logo {
   0% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
-    border-width: 10px;
+    border-width: 2px;
   }
   50% {
-    -webkit-transform: rotate(420deg);
-            transform: rotate(420deg);
-    border-width: 5px;
+    -webkit-transform: rotate(120deg);
+            transform: rotate(120deg);
+    border-width: 4px;
   }
   100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    border-width: 6px;
+    opacity: 1;
+  }
+}
+
+@keyframes rotation1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    border-width: 6px;
+    opacity: 1;
+  }
+  45% {
     -webkit-transform: rotate(860deg);
             transform: rotate(860deg);
-    border-width: 10px;
+    border-width: 4px;
+    opacity: 1;
+  }
+  70% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    border-width: 2px;
+    opacity: 1;
+  }
+  100% {
     opacity: 0;
   }
 }
 
 #menu .monbouton {
-  -webkit-animation: slide-in-top 2s cubic-bezier(1, 0.7, 0.15, 1) both;
-          animation: slide-in-top 2s cubic-bezier(1, 0.7, 0.15, 1) both;
+  -webkit-animation: slide-in-top 4s cubic-bezier(1, 0.7, 0.15, 1) both;
+          animation: slide-in-top 4s cubic-bezier(1, 0.7, 0.15, 1) both;
 }
 
 @-webkit-keyframes slide-in-top {
@@ -594,6 +665,64 @@ header #page #logo {
     -webkit-transform: translateY(4000);
     transform: translateY(4000);
     opacity: 1;
+  }
+}
+
+aside:hover {
+  -webkit-animation: slide-left 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: slide-left 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(50px);
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(50px);
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+aside .fas {
+  -webkit-animation: rotation 0.5s ease-in-out both;
+          animation: rotation 0.5s ease-in-out both;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
