@@ -85,7 +85,7 @@ header nav i {
   text-align: center;
 }
 
-.monbouton a:hover {
+#explorer .monbouton a:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   -webkit-transition: 1s;
@@ -160,9 +160,10 @@ header nav i {
 
 #fonctionnement .monbouton:hover {
   border: 0px solid #ff79da;
-  background-color: #ff79da;
-  -webkit-transition: 1s;
-  transition: 1s;
+  background-color: #9256dc1e;
+  -webkit-transition: 40ms;
+  transition: 40ms;
+  cursor: pointer;
 }
 
 #fonctionnement .monbouton a {
@@ -435,6 +436,13 @@ header #page #logo {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+}
+
+#menu .monbouton a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .global {

@@ -64,7 +64,7 @@ header nav i {
   font-weight: 300;
   text-align: center;
 }
-.monbouton a:hover {
+#explorer .monbouton a:hover {
   transform: scale(1.1);
   transition: 1s;
 }
@@ -119,8 +119,9 @@ header nav i {
 }
 #fonctionnement .monbouton:hover {
   border: 0px solid #ff79da;
-  background-color: #ff79da;
-  transition: 1s;
+  background-color: #9256dc1e;
+  transition: 40ms;
+  cursor: pointer;
 }
 
 #fonctionnement .monbouton a {
@@ -330,6 +331,10 @@ header #page #logo {
   background-color: white;
   flex-direction: row;
 }
+#menu .monbouton a:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
 .global {
   width: 100%;
   display: -webkit-box;
@@ -360,6 +365,7 @@ header #page #logo {
   padding: 28px 34px 0px 41px;
   font-size: 19px;
 }
+
 
 #menu > h2 {
   font-size: 15px;
@@ -479,9 +485,10 @@ aside:hover {
     100% {opacity: 0; }
     }
 
-#menu .monbouton {
 
-animation: slide-in-top 4s cubic-bezier(1, 0.700, 0.150, 1) both;
+@for .monbouton from 1 through 10 {
+    #menu .monbouton{
+        animation-delay : slide-in-top 4s cubic-bezier(1, 0.700, 0.150, 1) both;
 
 
 }
