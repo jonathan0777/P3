@@ -367,6 +367,7 @@ header #page #logo {
 }
 
 
+
 #menu > h2 {
   font-size: 15px;
   margin: 5px;
@@ -485,10 +486,9 @@ aside:hover {
     100% {opacity: 0; }
     }
 
+#menu .monbouton {
 
-@for .monbouton from 1 through 10 {
-    #menu .monbouton{
-        animation-delay : slide-in-top 4s cubic-bezier(1, 0.700, 0.150, 1) both;
+animation: slide-in-top 4s cubic-bezier(1, 0.700, 0.150, 1) both;
 
 
 }
