@@ -202,6 +202,17 @@ header nav i {
   margin: 20px 0;
 }
 
+.nouveau1, .nouveau2 {
+  position: absolute;
+  margin: 21px 0px 0px 1030px;
+  color: cadetblue;
+  font-size: 21px;
+  background: #99E2D0;
+  padding: 11px;
+  font-weight: 600;
+  border-radius: 3px;
+}
+
 .restaurants article:hover {
   -webkit-transform: scale(1.031);
           transform: scale(1.031);
@@ -427,7 +438,7 @@ header #page #logo {
 }
 
 .global {
-  width: 200px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -439,6 +450,7 @@ header #page #logo {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 #menu article:hover {
@@ -456,6 +468,8 @@ header #page #logo {
 
 #menu .monbouton i {
   color: white;
+  padding: 28px 34px 0px 41px;
+  font-size: 19px;
 }
 
 #menu > h2 {
@@ -470,6 +484,9 @@ header #page #logo {
   font-size: 15px;
   margin: 5px;
   font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 #menu > h2:hover {
@@ -480,17 +497,22 @@ header #page #logo {
   font-size: 12px;
   font-weight: 100;
   margin: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 200px;
 }
 
 #menu .prix {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  /* -webkit-box-pack: end; */
   -ms-flex-pack: end;
   -webkit-box-pack: end;
-          justify-content: flex-end;
-  width: 80%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
 aside {
@@ -501,7 +523,7 @@ aside {
   -ms-flex-pack: justify;
   justify-content: space-between;
   /* margin: 0px 0px 10px 30px; */
-  width: 30%;
+  width: 10%;
   border-radius: 0 18px 18px 0;
 }
 
