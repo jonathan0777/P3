@@ -90,6 +90,10 @@ header nav i {
           transform: scale(1.1);
   -webkit-transition: 1s;
   transition: 1s;
+  -webkit-filter: brightness(1.2);
+          filter: brightness(1.2);
+  -webkit-box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.4);
 }
 
 #explorer .monbouton {
@@ -124,17 +128,25 @@ header nav i {
 
 #fonctionnement {
   margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .nombre {
-  position: absolute;
+  /* position: absolute; */
   padding: 21px -9px 4px 0px;
   margin: 21px 0px 0px -12px;
   border-radius: 2px solid black;
   border-radius: 45px;
   padding: 2px 7px;
-  background: #9356DC;
+  background: #9356dc;
   color: white;
+  margin: -1px 0 0 -14px;
 }
 
 #fonctionnement article {
@@ -143,19 +155,19 @@ header nav i {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-line-pack: justify;
-      align-content: space-between;
+  align-content: space-between;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: start;
   -webkit-box-shadow: 0px 0px 10px 0px gainsboro;
-          box-shadow: 0px 0px 10px 0px gainsboro;
+  box-shadow: 0px 0px 10px 0px gainsboro;
   border-radius: 18px;
   padding: 20px 0 20px 0;
-  margin: 20px 0px 20px 0;
 }
 
 #fonctionnement .monbouton {
   border-radius: 18px;
+  margin: 20px 0;
 }
 
 #fonctionnement .monbouton:hover {
@@ -170,14 +182,20 @@ header nav i {
   color: black;
   font-size: 15px;
   font-weight: 700;
+  padding-left: 20px;
 }
 
 #fonctionnement .monbouton i {
   color: grey;
+  padding: 0 100px;
 }
 
 #fonctionnement .monbouton i:hover {
   color: #ff79da;
+  -webkit-transform: scale(1.031);
+          transform: scale(1.031);
+  -webkit-transition: 20ms;
+  transition: 20ms;
 }
 
 .restaurants {
@@ -201,14 +219,17 @@ header nav i {
   -webkit-box-shadow: 0px 0px 12px 0px gainsboro;
           box-shadow: 0px 0px 12px 0px gainsboro;
   margin: 20px 0;
+  position: relative;
 }
 
-.nouveau1, .nouveau2 {
+.nouveau1,
+.nouveau2 {
   position: absolute;
-  margin: 21px 0px 0px 1030px;
+  top: 20px;
+  right: 20px;
   color: cadetblue;
   font-size: 21px;
-  background: #99E2D0;
+  background: #99e2d0;
   padding: 11px;
   font-weight: 600;
   border-radius: 3px;
@@ -260,10 +281,10 @@ header nav i {
 }
 
 .coeur i.far:hover {
-  -webkit-transition-delay: 30ms;
-          transition-delay: 30ms;
+  -webkit-transition: 300ms;
+  transition: 300ms;
   opacity: 0;
-  color: linear-gradient(164deg, #ff79da 0%, #9356dc 81%);
+  background-image: linear-gradient(164deg, #ff79da 0%, #9356dc 81%);
 }
 
 i.fas.fa-heart {
@@ -484,7 +505,7 @@ header #page #logo {
   font-size: 15px;
   margin: 5px;
   font-weight: 400;
-  border-bottom: 3px solid #99E2D0;
+  border-bottom: 3px solid #99e2d0;
   width: 39px;
 }
 
@@ -498,7 +519,7 @@ header #page #logo {
 }
 
 #menu > h2:hover {
-  border-bottom: 3px solid #99E2D0;
+  border-bottom: 3px solid #99e2d0;
 }
 
 #menu h3 {
@@ -540,7 +561,18 @@ aside i {
 }
 
 aside:hover {
-  background-color: #99E2D0;
+  background-color: #99e2d0;
+}
+
+.commander a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-filter: brightness(1.2);
+          filter: brightness(1.2);
+  -webkit-box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.4);
 }
 
 .commander a {
@@ -574,7 +606,64 @@ aside:hover {
   width: 100px;
   height: 100px;
   position: fixed;
-  margin: 330px 560px;
+  top: 342px;
+  right: 550px;
+}
+
+.load1 {
+  -webkit-animation: color 3.2s linear 1 alternate both;
+  animation: color 3.2s linear 1 alternate both;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@-webkit-keyframes color {
+  0% {
+    -webkit-filter: blur(1);
+            filter: blur(1);
+    opacity: 1;
+  }
+  2% {
+    -webkit-filter: blur(1);
+            filter: blur(1);
+  }
+  100% {
+    -webkit-filter: blur(1);
+            filter: blur(1);
+  }
+}
+
+@keyframes color {
+  0% {
+    -webkit-filter: blur(1);
+            filter: blur(1);
+  }
+  100% {
+    -webkit-filter: blur(1);
+            filter: blur(1);
+  }
+}
+
+@keyframes color {
+  0% {
+    -webkit-filter: brightness(1);
+            filter: brightness(1);
+    -webkit-filter: blur(1);
+            filter: blur(1);
+  }
+  99% {
+    opacity: 0;
+    -webkit-filter: blur(1);
+            filter: blur(1);
+  }
 }
 
 .loader div {
@@ -586,8 +675,8 @@ aside:hover {
   border: 10px solid transparent;
   border-top-color: #ff79da;
   border-radius: 50px;
-  -webkit-animation: rotation1 3.2s both;
-          animation: rotation1 3.2s both;
+  -webkit-animation: rotation1 3.0s 1 both;
+          animation: rotation1 3.0s 1 both;
 }
 
 .loader div:nth-child(2) {
@@ -650,6 +739,9 @@ aside:hover {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
     border-width: 2px;
+    opacity: 1;
+  }
+  99% {
     opacity: 1;
   }
   100% {

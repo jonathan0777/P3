@@ -8,6 +8,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
+
 }
 header {
   width: 100%;
@@ -24,8 +25,8 @@ header #logo img {
   object-fit: cover;
 }
 header nav {
-  background: rgb(128,128,128);
-background: linear-gradient(180deg, rgba(128,128,128,0.1856092778908438) 61%, rgba(245,245,245,1) 95%);
+  background: rgb(128, 128, 128);
+  background: linear-gradient(180deg, rgba(128, 128, 128, 0.1856092778908438) 61%, rgba(245, 245, 245, 1) 95%);
   text-align: right;
 }
 header nav .moteur {
@@ -36,11 +37,11 @@ header nav input {
   border: none;
   font-size: 17px;
   font-weight: 600;
-  background: rgb(128,128,128);
-background: linear-gradient(180deg, rgba(128,128,128,0) 61%, rgba(245,245,245,1) 95%);
+  background: rgb(128, 128, 128);
+  background: linear-gradient(180deg, rgba(128, 128, 128, 0) 61%, rgba(245, 245, 245, 1) 95%);
   padding: 10px 0;
 }
-input:focus-visible{
+input:focus-visible {
   outline: none;
 }
 header nav i {
@@ -67,6 +68,8 @@ header nav i {
 #explorer .monbouton a:hover {
   transform: scale(1.1);
   transition: 1s;
+  filter: brightness(1.2);
+  box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.4);
 }
 #explorer .monbouton {
   color: white;
@@ -78,7 +81,7 @@ header nav i {
   transition: 2s;
 }
 #explorer .monbouton a {
-  background:linear-gradient(164deg, #ff79da 0%, #9356dc 81%);
+  background: linear-gradient(164deg, #ff79da 0%, #9356dc 81%);
   display: block;
   display: block;
   color: white;
@@ -88,34 +91,43 @@ header nav i {
   text-decoration: none;
   text-align: center;
   font-size: 14px;
-  box-shadow: 1px 1px 8px 2px rgba(0,0,0,0.2);
+  box-shadow: 1px 1px 8px 2px rgba(0, 0, 0, 0.2);
 }
 
 #fonctionnement {
   margin: 20px;
+  display: flex;
+  flex-direction: column;
 }
 .nombre {
-  position: absolute;
+  /* position: absolute; */
   padding: 21px -9px 4px 0px;
   margin: 21px 0px 0px -12px;
   border-radius: 2px solid black;
   border-radius: 45px;
   padding: 2px 7px;
-  background: #9356DC;
+  background: #9356dc;
   color: white;
+  margin: -1px 0 0 -14px;
 }
 #fonctionnement article {
   border: 2px solid transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-line-pack: justify;
   align-content: space-between;
-  justify-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: start;
+  -webkit-box-shadow: 0px 0px 10px 0px gainsboro;
   box-shadow: 0px 0px 10px 0px gainsboro;
   border-radius: 18px;
   padding: 20px 0 20px 0;
-  margin: 20px 0px 20px 0;
 }
 #fonctionnement .monbouton {
   border-radius: 18px;
+  margin: 20px 0;
 }
 #fonctionnement .monbouton:hover {
   border: 0px solid #ff79da;
@@ -128,13 +140,17 @@ header nav i {
   color: black;
   font-size: 15px;
   font-weight: 700;
+  padding-left: 20px;
 }
 #fonctionnement .monbouton i {
   color: grey;
+  padding: 0 100px;
 }
 
 #fonctionnement .monbouton i:hover {
   color: #ff79da;
+  transform: scale(1.031);
+  transition: 20ms;
 }
 .restaurants {
   background-color: #f2f2f2;
@@ -153,25 +169,27 @@ header nav i {
   border-radius: 18px;
   box-shadow: 0px 0px 12px 0px gainsboro;
   margin: 20px 0;
+  position: relative;
 }
 
-.nouveau1,.nouveau2{
+.nouveau1,
+.nouveau2 {
   position: absolute;
-  margin: 21px 0px 0px 1030px;
+  top: 20px;
+  right: 20px;
   color: cadetblue;
   font-size: 21px;
-  background: #99E2D0;
+  background: #99e2d0;
   padding: 11px;
   font-weight: 600;
   border-radius: 3px;
 }
 
 .restaurants article:hover {
-
   transform: scale(1.031);
   transition: 20ms;
 }
-.contain  {
+.contain {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -179,15 +197,15 @@ header nav i {
 .restaurants h3 {
   color: black;
   margin: 12px 0 5px 20px;
-    width: 70%;
+  width: 70%;
 }
 
 .titre {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
 }
 
-.coeur{
+.coeur {
   padding: 10px;
 }
 .coeur i.far.fa-heart {
@@ -196,23 +214,23 @@ header nav i {
   color: black;
 }
 .coeur i.far:hover {
-  transition-delay:30ms;
+  transition: 300ms;
   opacity: 0;
-  color:linear-gradient(164deg, #ff79da 0%, #9356dc 81%);
+  background-image: linear-gradient(164deg, #ff79da 0%, #9356dc 81%);
 }
-i.fas.fa-heart{
+i.fas.fa-heart {
   padding-top: 23px;
   font-size: 27px;
   margin: -1px -3px 0px -25px;
-  color:black;
+  color: black;
   position: absolute;
-  transition-delay:30ms;
+  transition-delay: 30ms;
   opacity: 0;
 }
 .coeur i.fas:hover {
-  transition-delay:30ms;
+  transition-delay: 30ms;
   opacity: 1;
-  background-color:linear-gradient(164deg, #ff79da 0%, #9356dc 81%);
+  background-color: linear-gradient(164deg, #ff79da 0%, #9356dc 81%);
 }
 
 .restaurants p {
@@ -268,8 +286,6 @@ header {
 header nav div img {
   width: 100%;
   height: 300px;
-  
-  
 }
 
 header #page #logo {
@@ -294,7 +310,6 @@ header #page #logo {
 #retour i:hover {
   transform: scale(1.1);
   transition: 1s;
-
 }
 
 #menu {
@@ -305,14 +320,14 @@ header #page #logo {
   margin: -23px 0px 0px;
 }
 #menu h1 {
- font-family: Shrikhand;
- font-size: 24px;
- margin: 10px 0 20px 15px;
- font-weight: normal;
- display: flex;
-    justify-content: space-between;
+  font-family: Shrikhand;
+  font-size: 24px;
+  margin: 10px 0 20px 15px;
+  font-weight: normal;
+  display: flex;
+  justify-content: space-between;
 }
-#menu h1{
+#menu h1 {
   padding-right: 10px;
 }
 #menu article {
@@ -366,13 +381,11 @@ header #page #logo {
   font-size: 19px;
 }
 
-
-
 #menu > h2 {
   font-size: 15px;
   margin: 5px;
   font-weight: 400;
-  border-bottom: 3px solid #99E2D0;
+  border-bottom: 3px solid #99e2d0;
   width: 39px;
 }
 #menu .monbouton h2 {
@@ -383,8 +396,7 @@ header #page #logo {
 }
 
 #menu > h2:hover {
-  
-  border-bottom: 3px solid #99E2D0;
+  border-bottom: 3px solid #99e2d0;
 }
 
 #menu h3 {
@@ -418,9 +430,12 @@ aside i {
 }
 
 aside:hover {
-  background-color: #99E2D0;
+  background-color: #99e2d0;
 }
-
+.commander a:hover {transform: scale(1.1);
+  transition: 1s;
+  filter: brightness(1.2);
+  box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.4);}
 .commander a {
   display: block;
   color: white;
@@ -431,9 +446,8 @@ aside:hover {
   text-decoration: none;
   text-align: center;
   font-size: 14px;
-  background:linear-gradient(164deg, #ff79da 0%, #9356dc 81%);
-  box-shadow: 1px 1px 8px 2px rgba(0,0,0,0.2);
-
+  background: linear-gradient(164deg, #ff79da 0%, #9356dc 81%);
+  box-shadow: 1px 1px 8px 2px rgba(0, 0, 0, 0.2);
 }
 .commander {
   margin: 0px 0px;
@@ -446,16 +460,65 @@ aside:hover {
   -ms-flex-pack: center;
   justify-content: center;
 }
-
-
-
-
-  .loader {
-    width: 100px;
-    height: 100px;
-    position: fixed;
-    margin: 330px 560px;
+body {
 }
+.loader {
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  top: 342px;
+  right: 550px;
+  
+}
+.load1 { 
+	-webkit-animation: color 3.2s linear 1 alternate both;
+	        animation: color 3.2s linear 1 alternate both;
+          background-color: white;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          
+}
+
+@-webkit-keyframes color {
+  0% {
+    
+    filter: blur(1);
+    opacity: 1;
+  }
+  2% {
+    
+    filter: blur(1);
+    
+  }
+  100% {
+    
+    filter: blur(1);
+  }
+ }
+@keyframes color {
+  0% {
+    
+    filter: blur(1);
+  }
+  100% {
+   
+    filter: blur(1);
+  }  }
+  @keyframes color {
+    0% {
+      
+        filter: brightness(1);
+        filter: blur(1);
+        
+    }
+    99% {
+     opacity: 0;
+      filter: blur(1);
+      
+    }
+   }
 
 .loader div {
   box-sizing: border-box;
@@ -463,85 +526,105 @@ aside:hover {
   width: 100%;
   height: 100%;
   border: 10px solid transparent;
-  border-top-color:#ff79da;
+  border-top-color: #ff79da;
   border-radius: 50px;
-  animation: rotation1 3.2s both;
-
+  animation: rotation1 3.0s 1 both;
 }
-.loader div:nth-child(2){
+.loader div:nth-child(2) {
   border: 10px solid transparent;
-  border-bottom-color:#9356dc;
+  border-bottom-color: #9356dc;
 }
-@keyframes rotation1{
-  0% { transform: rotate(0deg); border-width: 2px }  
-  50% { transform: rotate(120deg); border-width: 4px } 
-  100% { transform: rotate(360deg); border-width: 6px;
-  opacity: 1; }
+@keyframes rotation1 {
+  0% {
+    transform: rotate(0deg);
+    border-width: 2px;
   }
+  50% {
+    transform: rotate(120deg);
+    border-width: 4px;
+  }
+  100% {
+    transform: rotate(360deg);
+    border-width: 6px;
+    opacity: 1;
+  }
+}
 
-  @keyframes rotation1{
-    0% { transform: rotate(0deg); border-width: 6px;opacity: 1; }  
-    45% { transform: rotate(860deg); border-width: 4px;opacity: 1; } 
-    70% { transform: rotate(0deg); border-width: 2px;opacity: 1;}
-    100% {opacity: 0; }
-    }
+@keyframes rotation1 {
+  0% {
+    transform: rotate(0deg);
+    border-width: 6px;
+    opacity: 1;
+  }
+  45% {
+    transform: rotate(860deg);
+    border-width: 4px;
+    opacity: 1;
+  }
+  70% {
+    transform: rotate(0deg);
+    border-width: 2px;
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 
 #menu .monbouton {
-
-animation: slide-in-top 4s cubic-bezier(1, 0.700, 0.150, 1) both;
-
-
+  animation: slide-in-top 4s cubic-bezier(1, 0.7, 0.15, 1) both;
 }
-
 @keyframes slide-in-top {
   0% {
     -webkit-transform: translateY(-40px);
-            transform: translateY(-40px);
+    transform: translateY(-40px);
     opacity: 0;
   }
   50% {
     -webkit-transform: translateY(-5px);
-            transform: translateY(-5px);
+    transform: translateY(-5px);
     opacity: 0;
-
   }
   100% {
     -webkit-transform: translateY(4000);
-            transform: translateY(4000);
+    transform: translateY(4000);
     opacity: 1;
   }
- }
+}
 
- aside:hover {
+aside:hover {
+  animation: slide-left 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
 
-  animation: slide-left 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; }
- 
-  @keyframes slide-left {
-    0% {
-      -webkit-transform: translateX(50px);
-              transform: translateX(50px);
-              opacity: 0;
-    }
-    100% {
-      -webkit-transform: translateX(0px);
-              transform: translateX(0px);
-              opacity: 1;
-    }
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(50px);
+    transform: translateX(50px);
+    opacity: 0;
   }
-  
+  100% {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
 aside .fas {
   animation: rotation 0.5s ease-in-out both;
-      }
-      @keyframes rotation {
-        0% {
-          -webkit-transform: rotate(0);
-                  transform: rotate(0);
-        }
-        100% {
-          -webkit-transform: rotate(360deg);
-                  transform: rotate(360deg);
-        }
-      }
+}
+@keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
 
 /*
 @keyframes jon {
