@@ -299,10 +299,32 @@ i.fas.fa-heart {
 }
 
 .coeur i.fas:hover {
-  -webkit-transition-delay: 30ms;
-          transition-delay: 30ms;
+  -webkit-transition: 100ms;
+  transition: 100ms;
   opacity: 1;
-  background-color: linear-gradient(164deg, #ff79da 0%, #9356dc 81%);
+  background-image: linear-gradient(164deg, #ff79da 0%, #9356dc 81%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: -1px 0 0 -25px;
+  font-size: 26px;
+}
+
+.load {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-color: #f2f2f2;
+  position: fixed;
 }
 
 .restaurants p {
@@ -612,7 +634,7 @@ aside:hover {
 
 .load1 {
   -webkit-animation: color 3.2s linear 1 alternate both;
-  animation: color 3.2s linear 1 alternate both;
+          animation: color 3.2s linear 1 alternate both;
   background-color: white;
   width: 100%;
   height: 100%;
@@ -625,13 +647,64 @@ aside:hover {
           flex-direction: column;
 }
 
-@-webkit-keyframes color {
+.load2 {
+  -webkit-animation: disparait 3.2s linear 1 alternate both;
+          animation: disparait 3.2s linear 1 alternate both;
+  background-color: #f2f2f2;
+  width: 100%;
+  height: 100%;
+  right: 0;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+}
+
+@-webkit-keyframes disparait {
   0% {
     -webkit-filter: blur(1);
             filter: blur(1);
-    opacity: 1;
   }
-  2% {
+  100% {
+    -webkit-filter: blur(1);
+            filter: blur(1);
+  }
+}
+
+@keyframes disparait {
+  0% {
+    -webkit-filter: blur(1);
+            filter: blur(1);
+  }
+  100% {
+    -webkit-filter: blur(1);
+            filter: blur(1);
+  }
+}
+
+@keyframes disparait {
+  0% {
+    -webkit-filter: brightness(1);
+            filter: brightness(1);
+    -webkit-filter: blur(1);
+            filter: blur(1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-filter: blur(1);
+            filter: blur(1);
+  }
+}
+
+@-webkit-keyframes color {
+  0% {
     -webkit-filter: blur(1);
             filter: blur(1);
   }

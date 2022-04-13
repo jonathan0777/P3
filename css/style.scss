@@ -228,10 +228,28 @@ i.fas.fa-heart {
   opacity: 0;
 }
 .coeur i.fas:hover {
-  transition-delay: 30ms;
+  transition: 100ms;
   opacity: 1;
-  background-color: linear-gradient(164deg, #ff79da 0%, #9356dc 81%);
-}
+  background-image: linear-gradient(164deg, #ff79da 0%, #9356dc 81%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: -1px 0 0 -25px;
+  font-size: 26px;}
+
+  .load {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: #f2f2f2;
+    position: fixed;
+  
+  }
+
+
 
 .restaurants p {
   color: black;
@@ -460,8 +478,7 @@ aside:hover {
   -ms-flex-pack: center;
   justify-content: center;
 }
-body {
-}
+
 .loader {
   width: 100px;
   height: 100px;
@@ -471,7 +488,6 @@ body {
   
 }
 .load1 { 
-	-webkit-animation: color 3.2s linear 1 alternate both;
 	        animation: color 3.2s linear 1 alternate both;
           background-color: white;
           width: 100%;
@@ -481,22 +497,45 @@ body {
           
 }
 
-@-webkit-keyframes color {
-  0% {
-    
-    filter: blur(1);
-    opacity: 1;
-  }
-  2% {
-    
-    filter: blur(1);
-    
-  }
-  100% {
-    
-    filter: blur(1);
-  }
- }
+.load2 { 
+  animation: disparait 3.2s linear 1 alternate both;
+  background-color: #f2f2f2;
+  width: 100%;
+  height: 100%;
+  right: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  
+  
+}
+
+
+@keyframes disparait {
+0% {
+
+filter: blur(1);
+}
+100% {
+
+filter: blur(1);
+}  }
+@keyframes disparait {
+0% {
+
+filter: brightness(1);
+filter: blur(1);
+
+}
+100% {
+opacity: 0;
+filter: blur(1);
+
+}
+}
+ 
 @keyframes color {
   0% {
     
