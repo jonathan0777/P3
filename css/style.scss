@@ -634,6 +634,16 @@ filter: blur(1);
   }
 }
 
+
+$diminuertemps : 0.8s;
+
+@for $i from 1 through 10 {
+  #menu .monbouton.monbouton {
+    animation-delay : $i * $diminuertemps
+  }
+}
+
+
 aside:hover {
   animation: slide-left 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }

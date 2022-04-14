@@ -863,6 +863,56 @@ aside:hover {
   }
 }
 
+#menu .monbouton.monbouton {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+#menu .monbouton.monbouton {
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
+}
+
+#menu .monbouton.monbouton {
+  -webkit-animation-delay: 2.4s;
+          animation-delay: 2.4s;
+}
+
+#menu .monbouton.monbouton {
+  -webkit-animation-delay: 3.2s;
+          animation-delay: 3.2s;
+}
+
+#menu .monbouton.monbouton {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+#menu .monbouton.monbouton {
+  -webkit-animation-delay: 4.8s;
+          animation-delay: 4.8s;
+}
+
+#menu .monbouton.monbouton {
+  -webkit-animation-delay: 5.6s;
+          animation-delay: 5.6s;
+}
+
+#menu .monbouton.monbouton {
+  -webkit-animation-delay: 6.4s;
+          animation-delay: 6.4s;
+}
+
+#menu .monbouton.monbouton {
+  -webkit-animation-delay: 7.2s;
+          animation-delay: 7.2s;
+}
+
+#menu .monbouton.monbouton {
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
+}
+
 aside:hover {
   -webkit-animation: slide-left 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
           animation: slide-left 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
