@@ -642,10 +642,10 @@ z-index: -1;
 $diminuertemps : 0.8s;
 
 @for $i from 1 through 10 {
-  #menu .monbouton.monbouton1 {
+  #menu .monbouton.monbouton#{$i} {
     animation-delay : $i * $diminuertemps
   }
-}
+ }
 
 
 aside:hover {
