@@ -613,7 +613,7 @@ filter: blur(1);
   }
 }
 
-#menu .monbouton {
+#menu .monbouton.monbouton {
   animation: slide-in-top 4s cubic-bezier(1, 0.7, 0.15, 1) both;
 }
 @keyframes slide-in-top {
@@ -638,7 +638,7 @@ filter: blur(1);
 $diminuertemps : 0.8s;
 
 @for $i from 1 through 10 {
-  #menu .monbouton.monbouton {
+  #menu .monbouton.monbouton1 {
     animation-delay : $i * $diminuertemps
   }
 }

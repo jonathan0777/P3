@@ -822,7 +822,7 @@ aside:hover {
   }
 }
 
-#menu .monbouton {
+#menu .monbouton.monbouton {
   -webkit-animation: slide-in-top 4s cubic-bezier(1, 0.7, 0.15, 1) both;
           animation: slide-in-top 4s cubic-bezier(1, 0.7, 0.15, 1) both;
 }
@@ -863,52 +863,52 @@ aside:hover {
   }
 }
 
-#menu .monbouton.monbouton {
+#menu .monbouton.monbouton1 {
   -webkit-animation-delay: 0.8s;
           animation-delay: 0.8s;
 }
 
-#menu .monbouton.monbouton {
+#menu .monbouton.monbouton1 {
   -webkit-animation-delay: 1.6s;
           animation-delay: 1.6s;
 }
 
-#menu .monbouton.monbouton {
+#menu .monbouton.monbouton1 {
   -webkit-animation-delay: 2.4s;
           animation-delay: 2.4s;
 }
 
-#menu .monbouton.monbouton {
+#menu .monbouton.monbouton1 {
   -webkit-animation-delay: 3.2s;
           animation-delay: 3.2s;
 }
 
-#menu .monbouton.monbouton {
+#menu .monbouton.monbouton1 {
   -webkit-animation-delay: 4s;
           animation-delay: 4s;
 }
 
-#menu .monbouton.monbouton {
+#menu .monbouton.monbouton1 {
   -webkit-animation-delay: 4.8s;
           animation-delay: 4.8s;
 }
 
-#menu .monbouton.monbouton {
+#menu .monbouton.monbouton1 {
   -webkit-animation-delay: 5.6s;
           animation-delay: 5.6s;
 }
 
-#menu .monbouton.monbouton {
+#menu .monbouton.monbouton1 {
   -webkit-animation-delay: 6.4s;
           animation-delay: 6.4s;
 }
 
-#menu .monbouton.monbouton {
+#menu .monbouton.monbouton1 {
   -webkit-animation-delay: 7.2s;
           animation-delay: 7.2s;
 }
 
-#menu .monbouton.monbouton {
+#menu .monbouton.monbouton1 {
   -webkit-animation-delay: 8s;
           animation-delay: 8s;
 }
