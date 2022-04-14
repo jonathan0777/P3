@@ -485,6 +485,7 @@ aside:hover {
 .loader {
   width: 100px;
   height: 100px;
+  position: relative;
 
 
   
@@ -503,7 +504,7 @@ aside:hover {
 }
 
 .load2 { 
-  animation: disparait 3.2s linear 1 alternate both;
+  animation: disparait 1s 2s linear 1 alternate both;
   background-color: #f2f2f2;
   width: 100%;
   height: 100%;
@@ -518,25 +519,19 @@ aside:hover {
 }
 
 
+
 @keyframes disparait {
 0% {
 
-filter: blur(1);
-}
-100% {
 
-filter: blur(1);
-}  }
-@keyframes disparait {
-0% {
-
-filter: brightness(1);
-filter: blur(1);
+opacity: 1;
+z-index: 99;
 
 }
 100% {
 opacity: 0;
-filter: blur(1);
+z-index: -1;
+
 
 }
 }

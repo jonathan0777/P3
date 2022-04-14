@@ -631,6 +631,7 @@ aside:hover {
 .loader {
   width: 100px;
   height: 100px;
+  position: relative;
 }
 
 .load1 {
@@ -657,8 +658,8 @@ aside:hover {
 }
 
 .load2 {
-  -webkit-animation: disparait 3.2s linear 1 alternate both;
-          animation: disparait 3.2s linear 1 alternate both;
+  -webkit-animation: disparait 1s 2s linear 1 alternate both;
+          animation: disparait 1s 2s linear 1 alternate both;
   background-color: #f2f2f2;
   width: 100%;
   height: 100%;
@@ -678,37 +679,23 @@ aside:hover {
 
 @-webkit-keyframes disparait {
   0% {
-    -webkit-filter: blur(1);
-            filter: blur(1);
-  }
-  100% {
-    -webkit-filter: blur(1);
-            filter: blur(1);
-  }
-}
-
-@keyframes disparait {
-  0% {
-    -webkit-filter: blur(1);
-            filter: blur(1);
-  }
-  100% {
-    -webkit-filter: blur(1);
-            filter: blur(1);
-  }
-}
-
-@keyframes disparait {
-  0% {
-    -webkit-filter: brightness(1);
-            filter: brightness(1);
-    -webkit-filter: blur(1);
-            filter: blur(1);
+    opacity: 1;
+    z-index: 99;
   }
   100% {
     opacity: 0;
-    -webkit-filter: blur(1);
-            filter: blur(1);
+    z-index: -1;
+  }
+}
+
+@keyframes disparait {
+  0% {
+    opacity: 1;
+    z-index: 99;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
   }
 }
 
