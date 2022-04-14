@@ -485,9 +485,8 @@ aside:hover {
 .loader {
   width: 100px;
   height: 100px;
-  position: fixed;
-  top: 342px;
-  right: 550px;
+
+
   
 }
 .load1 { 
@@ -497,6 +496,9 @@ aside:hover {
           height: 100%;
           display: flex;
           flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          align-content: center;
           
 }
 

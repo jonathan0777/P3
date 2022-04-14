@@ -631,9 +631,6 @@ aside:hover {
 .loader {
   width: 100px;
   height: 100px;
-  position: fixed;
-  top: 342px;
-  right: 550px;
 }
 
 .load1 {
@@ -649,6 +646,14 @@ aside:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .load2 {
