@@ -277,6 +277,8 @@ header nav i {
 .coeur i.far.fa-heart {
   padding-top: 23px;
   font-size: 24px;
+  -webkit-transition: 300ms;
+  transition: 300ms;
   color: black;
 }
 
@@ -285,6 +287,8 @@ header nav i {
   transition: 300ms;
   opacity: 0;
   background-image: linear-gradient(164deg, #ff79da 0%, #9356dc 81%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 i.fas.fa-heart {
@@ -293,14 +297,14 @@ i.fas.fa-heart {
   margin: -1px -3px 0px -25px;
   color: black;
   position: absolute;
-  -webkit-transition-delay: 30ms;
-          transition-delay: 30ms;
+  -webkit-transition-delay: 300ms;
+          transition-delay: 300ms;
   opacity: 0;
 }
 
 .coeur i.fas:hover {
-  -webkit-transition: 100ms;
-  transition: 100ms;
+  -webkit-transition: 300ms;
+  transition: 300ms;
   opacity: 1;
   background-image: linear-gradient(164deg, #ff79da 0%, #9356dc 81%);
   -webkit-background-clip: text;

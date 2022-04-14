@@ -211,12 +211,15 @@ header nav i {
 .coeur i.far.fa-heart {
   padding-top: 23px;
   font-size: 24px;
+  transition: 300ms;
   color: black;
 }
 .coeur i.far:hover {
   transition: 300ms;
   opacity: 0;
   background-image: linear-gradient(164deg, #ff79da 0%, #9356dc 81%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 i.fas.fa-heart {
   padding-top: 23px;
@@ -224,11 +227,11 @@ i.fas.fa-heart {
   margin: -1px -3px 0px -25px;
   color: black;
   position: absolute;
-  transition-delay: 30ms;
+  transition-delay: 300ms;
   opacity: 0;
 }
 .coeur i.fas:hover {
-  transition: 100ms;
+  transition: 300ms;
   opacity: 1;
   background-image: linear-gradient(164deg, #ff79da 0%, #9356dc 81%);
   -webkit-background-clip: text;
