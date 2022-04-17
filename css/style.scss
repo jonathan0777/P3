@@ -409,8 +409,10 @@ header #page #logo {
 }
 #menu .monbouton i {
   color: white;
-  padding: 28px 34px 0px 41px;
   font-size: 19px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
 
 #menu > h2 {
