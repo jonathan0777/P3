@@ -213,6 +213,7 @@ header nav i {
   font-size: 24px;
   transition: 300ms;
   color: black;
+  
 }
 .coeur i.far:hover {
   transition: 300ms;
@@ -220,6 +221,7 @@ header nav i {
   background-image: linear-gradient(164deg, #ff79da 0%, #9356dc 81%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  transform: scale(1.2);
 }
 i.fas.fa-heart {
   padding-top: 23px;
@@ -227,11 +229,12 @@ i.fas.fa-heart {
   margin: -1px -3px 0px -25px;
   color: black;
   position: absolute;
-  transition-delay: 300ms;
+  transition: 300ms;
   opacity: 0;
   background-image: linear-gradient(164deg, #ff79da 0%, #9356dc 81%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  
 }
 .coeur i.fas:hover {
   transition: 300ms;
@@ -369,6 +372,9 @@ header #page #logo {
   border-radius: 18px;
   margin: 20px 5px;
   background-color: white;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
 }
 #menu .monbouton a:hover {
@@ -376,19 +382,20 @@ header #page #logo {
   transition: 1s;
 }
 .global {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin: 0px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      /* width: 100%; */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      flex: 1;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      margin: 0px;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
 }
 
 #menu article:hover {
@@ -428,8 +435,9 @@ header #page #logo {
   font-size: 12px;
   font-weight: 100;
   margin: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  width: 200px;
 }
 #menu .prix {
   display: -webkit-box;
@@ -437,7 +445,11 @@ header #page #logo {
   display: flex;
   -ms-flex-pack: end;
   -webkit-box-pack: end;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
+  padding: 20px;
 }
 aside {
   display: -webkit-box;
@@ -447,11 +459,14 @@ aside {
   -ms-flex-pack: justify;
   justify-content: space-between;
   /* margin: 0px 0px 10px 30px; */
-  width: 10%;
   border-radius: 0 18px 18px 0;
 }
 aside i {
   color: white;
+    padding: 28px 34px 0px 41px;
+    font-size: 19px;
+    background: blue;
+    width: 40px;
 }
 
 aside:hover {
@@ -643,9 +658,33 @@ $diminuertemps : 0.8s;
 
 @for $i from 1 through 10 {
   #menu .monbouton.monbouton#{$i} {
-    animation-delay : $i * $diminuertemps
+    animation-delay : $i * $diminuertemps }
+    #menu .monbouton.monbouton#{$i} a {
+      color: black;
+      font-size: 15px;
+      font-weight: 700;
+    }
+    #menu .monbouton.monbouton#{$i} i {
+      color: white;
+      padding: 28px 34px 0px 41px;
+      font-size: 19px;
+    }
+    
+    #menu .monbouton.monbouton#{$i} > h2 {
+      font-size: 15px;
+      margin: 5px;
+      font-weight: 400;
+      border-bottom: 3px solid #99e2d0;
+      width: 39px;
+    }
+    #menu .monbouton.monbouton#{$i} h2 {
+      font-size: 15px;
+      margin: 5px;
+      font-weight: 600;
+      display: flex;
+    }
   }
- }
+
 
 
 aside:hover {

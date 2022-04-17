@@ -289,6 +289,8 @@ header nav i {
   background-image: linear-gradient(164deg, #ff79da 0%, #9356dc 81%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 i.fas.fa-heart {
@@ -297,8 +299,8 @@ i.fas.fa-heart {
   margin: -1px -3px 0px -25px;
   color: black;
   position: absolute;
-  -webkit-transition-delay: 300ms;
-          transition-delay: 300ms;
+  -webkit-transition: 300ms;
+  transition: 300ms;
   opacity: 0;
   background-image: linear-gradient(164deg, #ff79da 0%, #9356dc 81%);
   -webkit-background-clip: text;
@@ -486,8 +488,8 @@ header #page #logo {
   background-color: white;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
 }
 
 #menu .monbouton a:hover {
@@ -498,10 +500,13 @@ header #page #logo {
 }
 
 .global {
-  width: 100%;
+  /* width: 100%; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   -ms-flex-wrap: wrap;
@@ -560,7 +565,6 @@ header #page #logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 200px;
 }
 
 #menu .prix {
@@ -571,8 +575,9 @@ header #page #logo {
   -webkit-box-pack: end;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  padding: 20px;
 }
 
 aside {
@@ -583,12 +588,15 @@ aside {
   -ms-flex-pack: justify;
   justify-content: space-between;
   /* margin: 0px 0px 10px 30px; */
-  width: 10%;
   border-radius: 0 18px 18px 0;
 }
 
 aside i {
   color: white;
+  padding: 28px 34px 0px 41px;
+  font-size: 19px;
+  background: blue;
+  width: 40px;
 }
 
 aside:hover {
@@ -869,9 +877,67 @@ aside:hover {
           animation-delay: 0.8s;
 }
 
+#menu .monbouton.monbouton1 a {
+  color: black;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+#menu .monbouton.monbouton1 i {
+  color: white;
+  padding: 28px 34px 0px 41px;
+  font-size: 19px;
+}
+
+#menu .monbouton.monbouton1 > h2 {
+  font-size: 15px;
+  margin: 5px;
+  font-weight: 400;
+  border-bottom: 3px solid #99e2d0;
+  width: 39px;
+}
+
+#menu .monbouton.monbouton1 h2 {
+  font-size: 15px;
+  margin: 5px;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 #menu .monbouton.monbouton2 {
   -webkit-animation-delay: 1.6s;
           animation-delay: 1.6s;
+}
+
+#menu .monbouton.monbouton2 a {
+  color: black;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+#menu .monbouton.monbouton2 i {
+  color: white;
+  padding: 28px 34px 0px 41px;
+  font-size: 19px;
+}
+
+#menu .monbouton.monbouton2 > h2 {
+  font-size: 15px;
+  margin: 5px;
+  font-weight: 400;
+  border-bottom: 3px solid #99e2d0;
+  width: 39px;
+}
+
+#menu .monbouton.monbouton2 h2 {
+  font-size: 15px;
+  margin: 5px;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 #menu .monbouton.monbouton3 {
@@ -879,9 +945,67 @@ aside:hover {
           animation-delay: 2.4s;
 }
 
+#menu .monbouton.monbouton3 a {
+  color: black;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+#menu .monbouton.monbouton3 i {
+  color: white;
+  padding: 28px 34px 0px 41px;
+  font-size: 19px;
+}
+
+#menu .monbouton.monbouton3 > h2 {
+  font-size: 15px;
+  margin: 5px;
+  font-weight: 400;
+  border-bottom: 3px solid #99e2d0;
+  width: 39px;
+}
+
+#menu .monbouton.monbouton3 h2 {
+  font-size: 15px;
+  margin: 5px;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 #menu .monbouton.monbouton4 {
   -webkit-animation-delay: 3.2s;
           animation-delay: 3.2s;
+}
+
+#menu .monbouton.monbouton4 a {
+  color: black;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+#menu .monbouton.monbouton4 i {
+  color: white;
+  padding: 28px 34px 0px 41px;
+  font-size: 19px;
+}
+
+#menu .monbouton.monbouton4 > h2 {
+  font-size: 15px;
+  margin: 5px;
+  font-weight: 400;
+  border-bottom: 3px solid #99e2d0;
+  width: 39px;
+}
+
+#menu .monbouton.monbouton4 h2 {
+  font-size: 15px;
+  margin: 5px;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 #menu .monbouton.monbouton5 {
@@ -889,9 +1013,67 @@ aside:hover {
           animation-delay: 4s;
 }
 
+#menu .monbouton.monbouton5 a {
+  color: black;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+#menu .monbouton.monbouton5 i {
+  color: white;
+  padding: 28px 34px 0px 41px;
+  font-size: 19px;
+}
+
+#menu .monbouton.monbouton5 > h2 {
+  font-size: 15px;
+  margin: 5px;
+  font-weight: 400;
+  border-bottom: 3px solid #99e2d0;
+  width: 39px;
+}
+
+#menu .monbouton.monbouton5 h2 {
+  font-size: 15px;
+  margin: 5px;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 #menu .monbouton.monbouton6 {
   -webkit-animation-delay: 4.8s;
           animation-delay: 4.8s;
+}
+
+#menu .monbouton.monbouton6 a {
+  color: black;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+#menu .monbouton.monbouton6 i {
+  color: white;
+  padding: 28px 34px 0px 41px;
+  font-size: 19px;
+}
+
+#menu .monbouton.monbouton6 > h2 {
+  font-size: 15px;
+  margin: 5px;
+  font-weight: 400;
+  border-bottom: 3px solid #99e2d0;
+  width: 39px;
+}
+
+#menu .monbouton.monbouton6 h2 {
+  font-size: 15px;
+  margin: 5px;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 #menu .monbouton.monbouton7 {
@@ -899,9 +1081,67 @@ aside:hover {
           animation-delay: 5.6s;
 }
 
+#menu .monbouton.monbouton7 a {
+  color: black;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+#menu .monbouton.monbouton7 i {
+  color: white;
+  padding: 28px 34px 0px 41px;
+  font-size: 19px;
+}
+
+#menu .monbouton.monbouton7 > h2 {
+  font-size: 15px;
+  margin: 5px;
+  font-weight: 400;
+  border-bottom: 3px solid #99e2d0;
+  width: 39px;
+}
+
+#menu .monbouton.monbouton7 h2 {
+  font-size: 15px;
+  margin: 5px;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 #menu .monbouton.monbouton8 {
   -webkit-animation-delay: 6.4s;
           animation-delay: 6.4s;
+}
+
+#menu .monbouton.monbouton8 a {
+  color: black;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+#menu .monbouton.monbouton8 i {
+  color: white;
+  padding: 28px 34px 0px 41px;
+  font-size: 19px;
+}
+
+#menu .monbouton.monbouton8 > h2 {
+  font-size: 15px;
+  margin: 5px;
+  font-weight: 400;
+  border-bottom: 3px solid #99e2d0;
+  width: 39px;
+}
+
+#menu .monbouton.monbouton8 h2 {
+  font-size: 15px;
+  margin: 5px;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 #menu .monbouton.monbouton9 {
@@ -909,9 +1149,67 @@ aside:hover {
           animation-delay: 7.2s;
 }
 
+#menu .monbouton.monbouton9 a {
+  color: black;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+#menu .monbouton.monbouton9 i {
+  color: white;
+  padding: 28px 34px 0px 41px;
+  font-size: 19px;
+}
+
+#menu .monbouton.monbouton9 > h2 {
+  font-size: 15px;
+  margin: 5px;
+  font-weight: 400;
+  border-bottom: 3px solid #99e2d0;
+  width: 39px;
+}
+
+#menu .monbouton.monbouton9 h2 {
+  font-size: 15px;
+  margin: 5px;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 #menu .monbouton.monbouton10 {
   -webkit-animation-delay: 8s;
           animation-delay: 8s;
+}
+
+#menu .monbouton.monbouton10 a {
+  color: black;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+#menu .monbouton.monbouton10 i {
+  color: white;
+  padding: 28px 34px 0px 41px;
+  font-size: 19px;
+}
+
+#menu .monbouton.monbouton10 > h2 {
+  font-size: 15px;
+  margin: 5px;
+  font-weight: 400;
+  border-bottom: 3px solid #99e2d0;
+  width: 39px;
+}
+
+#menu .monbouton.monbouton10 h2 {
+  font-size: 15px;
+  margin: 5px;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 aside:hover {
