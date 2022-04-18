@@ -123,7 +123,7 @@ header nav i {
   -webkit-box-shadow: 0px 0px 10px 0px gainsboro;
   box-shadow: 0px 0px 10px 0px gainsboro;
   border-radius: 18px;
-  padding: 20px 0 20px 0;
+  padding: 20px 20px 20px 0;
 }
 #fonctionnement .monbouton {
   border-radius: 18px;
@@ -144,7 +144,7 @@ header nav i {
 }
 #fonctionnement .monbouton i {
   color: grey;
-  padding: 0 100px;
+  margin: 0 22px;
 }
 
 #fonctionnement .monbouton i:hover {
@@ -168,7 +168,7 @@ header nav i {
   background: white;
   border-radius: 18px;
   box-shadow: 0px 0px 12px 0px gainsboro;
-  margin: 20px 0;
+  margin: 20px ;
   position: relative;
 }
 
@@ -377,6 +377,7 @@ header #page #logo {
   -ms-flex-direction: row;
   flex-direction: row;
 }
+
 #menu .monbouton a:hover {
   transform: scale(1.1);
   transition: 1s;
@@ -401,11 +402,13 @@ header #page #logo {
 #menu article:hover {
   transform: scale(1.013);
   transition: 30ms;
+  
 }
 #menu .monbouton a {
   color: black;
   font-size: 15px;
   font-weight: 700;
+  
 }
 #menu .monbouton i {
   color: white;
@@ -413,6 +416,8 @@ header #page #logo {
   display: flex;
   align-content: center;
   justify-content: center;
+  overflow: hidden;
+  
 }
 
 #menu > h2 {
@@ -473,6 +478,7 @@ aside i {
 
 aside:hover {
   background-color: #99e2d0;
+  
 }
 .commander a:hover {transform: scale(1.1);
   transition: 1s;
@@ -660,7 +666,8 @@ $diminuertemps : 0.8s;
 
 @for $i from 1 through 10 {
   #menu .monbouton.monbouton#{$i} {
-    animation-delay : $i * $diminuertemps }
+    animation-delay : $i * $diminuertemps;
+    width: 29%; }
     #menu .monbouton.monbouton#{$i} a {
       color: black;
       font-size: 15px;
@@ -689,7 +696,7 @@ $diminuertemps : 0.8s;
 
 
 
-aside:hover {
+article,aside:hover {
   animation: slide-left 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
@@ -706,7 +713,7 @@ aside:hover {
   }
 }
 
-aside .fas {
+aside i {
   animation: rotation 0.5s ease-in-out both;
 }
 @keyframes rotation {
@@ -726,3 +733,28 @@ aside .fas {
   to { padding-left:200px}
 }
 */
+
+
+@media screen and (min-width: 992px) {
+
+  .etablissement {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .etablissement a { 
+    width: 50%;
+  }
+.restaurants article {
+  width: 90%;
+}
+
+.filtres {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+
+
+}

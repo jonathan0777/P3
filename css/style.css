@@ -162,7 +162,7 @@ header nav i {
   -webkit-box-shadow: 0px 0px 10px 0px gainsboro;
   box-shadow: 0px 0px 10px 0px gainsboro;
   border-radius: 18px;
-  padding: 20px 0 20px 0;
+  padding: 20px 20px 20px 0;
 }
 
 #fonctionnement .monbouton {
@@ -187,7 +187,7 @@ header nav i {
 
 #fonctionnement .monbouton i {
   color: grey;
-  padding: 0 100px;
+  margin: 0 22px;
 }
 
 #fonctionnement .monbouton i:hover {
@@ -218,7 +218,7 @@ header nav i {
   border-radius: 18px;
   -webkit-box-shadow: 0px 0px 12px 0px gainsboro;
           box-shadow: 0px 0px 12px 0px gainsboro;
-  margin: 20px 0;
+  margin: 20px;
   position: relative;
 }
 
@@ -542,6 +542,7 @@ header #page #logo {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  overflow: hidden;
 }
 
 #menu > h2 {
@@ -882,6 +883,7 @@ aside:hover {
 #menu .monbouton.monbouton1 {
   -webkit-animation-delay: 0.8s;
           animation-delay: 0.8s;
+  width: 29%;
 }
 
 #menu .monbouton.monbouton1 a {
@@ -916,6 +918,7 @@ aside:hover {
 #menu .monbouton.monbouton2 {
   -webkit-animation-delay: 1.6s;
           animation-delay: 1.6s;
+  width: 29%;
 }
 
 #menu .monbouton.monbouton2 a {
@@ -950,6 +953,7 @@ aside:hover {
 #menu .monbouton.monbouton3 {
   -webkit-animation-delay: 2.4s;
           animation-delay: 2.4s;
+  width: 29%;
 }
 
 #menu .monbouton.monbouton3 a {
@@ -984,6 +988,7 @@ aside:hover {
 #menu .monbouton.monbouton4 {
   -webkit-animation-delay: 3.2s;
           animation-delay: 3.2s;
+  width: 29%;
 }
 
 #menu .monbouton.monbouton4 a {
@@ -1018,6 +1023,7 @@ aside:hover {
 #menu .monbouton.monbouton5 {
   -webkit-animation-delay: 4s;
           animation-delay: 4s;
+  width: 29%;
 }
 
 #menu .monbouton.monbouton5 a {
@@ -1052,6 +1058,7 @@ aside:hover {
 #menu .monbouton.monbouton6 {
   -webkit-animation-delay: 4.8s;
           animation-delay: 4.8s;
+  width: 29%;
 }
 
 #menu .monbouton.monbouton6 a {
@@ -1086,6 +1093,7 @@ aside:hover {
 #menu .monbouton.monbouton7 {
   -webkit-animation-delay: 5.6s;
           animation-delay: 5.6s;
+  width: 29%;
 }
 
 #menu .monbouton.monbouton7 a {
@@ -1120,6 +1128,7 @@ aside:hover {
 #menu .monbouton.monbouton8 {
   -webkit-animation-delay: 6.4s;
           animation-delay: 6.4s;
+  width: 29%;
 }
 
 #menu .monbouton.monbouton8 a {
@@ -1154,6 +1163,7 @@ aside:hover {
 #menu .monbouton.monbouton9 {
   -webkit-animation-delay: 7.2s;
           animation-delay: 7.2s;
+  width: 29%;
 }
 
 #menu .monbouton.monbouton9 a {
@@ -1188,6 +1198,7 @@ aside:hover {
 #menu .monbouton.monbouton10 {
   -webkit-animation-delay: 8s;
           animation-delay: 8s;
+  width: 29%;
 }
 
 #menu .monbouton.monbouton10 a {
@@ -1219,7 +1230,7 @@ aside:hover {
   display: flex;
 }
 
-aside:hover {
+article, aside:hover {
   -webkit-animation: slide-left 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
           animation: slide-left 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
@@ -1250,7 +1261,7 @@ aside:hover {
   }
 }
 
-aside .fas {
+aside i {
   -webkit-animation: rotation 0.5s ease-in-out both;
           animation: rotation 0.5s ease-in-out both;
 }
@@ -1283,4 +1294,29 @@ aside .fas {
   to { padding-left:200px}
 }
 */
+@media screen and (min-width: 992px) {
+  .etablissement {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .etablissement a {
+    width: 50%;
+  }
+  .restaurants article {
+    width: 90%;
+  }
+  .filtres {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
 /*# sourceMappingURL=style.css.map */
