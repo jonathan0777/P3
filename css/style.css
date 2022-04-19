@@ -139,9 +139,8 @@ header nav i {
 
 .nombre {
   /* position: absolute; */
-  padding: 21px -9px 4px 0px;
+  padding: 21px 0px 4px 0px;
   margin: 21px 0px 0px -12px;
-  border-radius: 2px solid black;
   border-radius: 45px;
   padding: 2px 7px;
   background: #9356dc;
@@ -174,7 +173,7 @@ header nav i {
   border: 0px solid #ff79da;
   background-color: #9256dc1e;
   -webkit-transition: 40ms;
-  transition: 40ms;
+  transition: 400ms;
   cursor: pointer;
 }
 
@@ -722,37 +721,37 @@ aside:hover {
 
 @-webkit-keyframes color {
   0% {
-    -webkit-filter: blur(1);
-            filter: blur(1);
+    -webkit-filter: blur(1.0);
+            filter: blur(1.0);
   }
   100% {
-    -webkit-filter: blur(1);
-            filter: blur(1);
+    -webkit-filter: blur(1.0);
+            filter: blur(1.0);
   }
 }
 
 @keyframes color {
   0% {
-    -webkit-filter: blur(1);
-            filter: blur(1);
+    -webkit-filter: blur(1.0);
+            filter: blur(1.0);
   }
   100% {
-    -webkit-filter: blur(1);
-            filter: blur(1);
+    -webkit-filter: blur(1.0);
+            filter: blur(1.0);
   }
 }
 
 @keyframes color {
   0% {
-    -webkit-filter: brightness(1);
-            filter: brightness(1);
-    -webkit-filter: blur(1);
-            filter: blur(1);
+    -webkit-filter: brightness(1.0);
+            filter: brightness(1.0);
+    -webkit-filter: blur(1.0);
+            filter: blur(1.0);
   }
   99% {
     opacity: 0;
-    -webkit-filter: blur(1);
-            filter: blur(1);
+    -webkit-filter: blur(1.0);
+            filter: blur(1.0);
   }
 }
 
@@ -765,8 +764,8 @@ aside:hover {
   border: 10px solid transparent;
   border-top-color: #ff79da;
   border-radius: 50px;
-  -webkit-animation: rotation1 3.0s 1 both;
-          animation: rotation1 3.0s 1 both;
+  -webkit-animation: rotation1 3s 1 both;
+          animation: rotation1 3s 1 both;
 }
 
 .loader div:nth-child(2) {
@@ -862,23 +861,6 @@ aside:hover {
   }
 }
 
-@keyframes slide-in-top {
-  0% {
-    -webkit-transform: translateY(-40px);
-    transform: translateY(-40px);
-    opacity: 0;
-  }
-  50% {
-    -webkit-transform: translateY(-5px);
-    transform: translateY(-5px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(4000);
-    transform: translateY(4000);
-    opacity: 1;
-  }
-}
 
 #menu .monbouton.monbouton1 {
   -webkit-animation-delay: 0.8s;
@@ -1230,7 +1212,8 @@ aside:hover {
   display: flex;
 }
 
-article, aside:hover {
+article,
+aside:hover {
   -webkit-animation: slide-left 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
           animation: slide-left 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
