@@ -371,6 +371,8 @@ header #page #logo {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
+  cursor: pointer;
+  overflow: hidden;
 }
 
 #menu .monbouton a:hover {
@@ -394,10 +396,6 @@ header #page #logo {
   flex-direction: column;
 }
 
-#menu article:hover {
-  transform: scale(1.013);
-  transition: 30ms;
-}
 #menu .monbouton a {
   color: black;
   font-size: 15px;
@@ -410,6 +408,7 @@ header #page #logo {
   align-content: center;
   justify-content: center;
   overflow: hidden;
+  height: 20px;
 }
 
 #menu > h2 {
@@ -424,6 +423,9 @@ header #page #logo {
   margin: 5px;
   font-weight: 600;
   display: flex;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 #menu > h2:hover {
@@ -459,13 +461,10 @@ aside {
   justify-content: space-between;
   /* margin: 0px 0px 10px 30px; */
   border-radius: 0 18px 18px 0;
-}
-aside i {
-  color: white;
-  padding: 28px 34px 0px 41px;
-  font-size: 19px;
-  background: blue;
-  width: 40px;
+  background-color:#99e2d0;
+  width: 0;
+  padding: 20px 0;
+  transition: 0.5s;
 }
 
 aside:hover {
@@ -649,11 +648,6 @@ $diminuertemps: 0.8s;
     font-size: 15px;
     font-weight: 700;
   }
-  #menu .monbouton.monbouton#{$i} i {
-    color: white;
-    padding: 28px 34px 0px 41px;
-    font-size: 19px;
-  }
 
   #menu .monbouton.monbouton#{$i} > h2 {
     font-size: 15px;
@@ -670,25 +664,13 @@ $diminuertemps: 0.8s;
   }
 }
 
-article,
-aside:hover {
-  animation: slide-left 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+#menu article:hover aside {
+  width: 59px;
+  padding: 20px;
 }
 
-@keyframes slide-left {
-  0% {
-    -webkit-transform: translateX(50px);
-    transform: translateX(50px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateX(0px);
-    transform: translateX(0px);
-    opacity: 1;
-  }
-}
 
-aside i {
+#menu article:hover aside i {
   animation: rotation 0.5s ease-in-out both;
 }
 @keyframes rotation {
@@ -725,5 +707,4 @@ aside i {
   .filtres {
     display: flex;
     justify-content: space-evenly;
-  }
-}
+} }

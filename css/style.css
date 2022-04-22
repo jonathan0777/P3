@@ -141,6 +141,7 @@ header nav i {
   /* position: absolute; */
   padding: 21px 0px 4px 0px;
   margin: 21px 0px 0px -12px;
+  border-radius: 2px solid black;
   border-radius: 45px;
   padding: 2px 7px;
   background: #9356dc;
@@ -173,7 +174,7 @@ header nav i {
   border: 0px solid #ff79da;
   background-color: #9256dc1e;
   -webkit-transition: 40ms;
-  transition: 400ms;
+  transition: 40ms;
   cursor: pointer;
 }
 
@@ -489,6 +490,8 @@ header #page #logo {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
+  cursor: pointer;
+  overflow: hidden;
 }
 
 #menu .monbouton a:hover {
@@ -517,13 +520,6 @@ header #page #logo {
   flex-direction: column;
 }
 
-#menu article:hover {
-  -webkit-transform: scale(1.013);
-          transform: scale(1.013);
-  -webkit-transition: 30ms;
-  transition: 30ms;
-}
-
 #menu .monbouton a {
   color: black;
   font-size: 15px;
@@ -542,6 +538,7 @@ header #page #logo {
       -ms-flex-pack: center;
           justify-content: center;
   overflow: hidden;
+  height: 20px;
 }
 
 #menu > h2 {
@@ -559,6 +556,9 @@ header #page #logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 #menu > h2:hover {
@@ -596,14 +596,11 @@ aside {
   justify-content: space-between;
   /* margin: 0px 0px 10px 30px; */
   border-radius: 0 18px 18px 0;
-}
-
-aside i {
-  color: white;
-  padding: 28px 34px 0px 41px;
-  font-size: 19px;
-  background: blue;
-  width: 40px;
+  background-color: #99e2d0;
+  width: 0;
+  padding: 20px 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 aside:hover {
@@ -721,37 +718,37 @@ aside:hover {
 
 @-webkit-keyframes color {
   0% {
-    -webkit-filter: blur(1.0);
-            filter: blur(1.0);
+    -webkit-filter: blur(1);
+            filter: blur(1);
   }
   100% {
-    -webkit-filter: blur(1.0);
-            filter: blur(1.0);
+    -webkit-filter: blur(1);
+            filter: blur(1);
   }
 }
 
 @keyframes color {
   0% {
-    -webkit-filter: blur(1.0);
-            filter: blur(1.0);
+    -webkit-filter: blur(1);
+            filter: blur(1);
   }
   100% {
-    -webkit-filter: blur(1.0);
-            filter: blur(1.0);
+    -webkit-filter: blur(1);
+            filter: blur(1);
   }
 }
 
 @keyframes color {
   0% {
-    -webkit-filter: brightness(1.0);
-            filter: brightness(1.0);
-    -webkit-filter: blur(1.0);
-            filter: blur(1.0);
+    -webkit-filter: brightness(1);
+            filter: brightness(1);
+    -webkit-filter: blur(1);
+            filter: blur(1);
   }
   99% {
     opacity: 0;
-    -webkit-filter: blur(1.0);
-            filter: blur(1.0);
+    -webkit-filter: blur(1);
+            filter: blur(1);
   }
 }
 
@@ -861,6 +858,23 @@ aside:hover {
   }
 }
 
+@keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-40px);
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(4000);
+    transform: translateY(4000);
+    opacity: 1;
+  }
+}
 
 #menu .monbouton.monbouton1 {
   -webkit-animation-delay: 0.8s;
@@ -872,12 +886,6 @@ aside:hover {
   color: black;
   font-size: 15px;
   font-weight: 700;
-}
-
-#menu .monbouton.monbouton1 i {
-  color: white;
-  padding: 28px 34px 0px 41px;
-  font-size: 19px;
 }
 
 #menu .monbouton.monbouton1 > h2 {
@@ -909,12 +917,6 @@ aside:hover {
   font-weight: 700;
 }
 
-#menu .monbouton.monbouton2 i {
-  color: white;
-  padding: 28px 34px 0px 41px;
-  font-size: 19px;
-}
-
 #menu .monbouton.monbouton2 > h2 {
   font-size: 15px;
   margin: 5px;
@@ -942,12 +944,6 @@ aside:hover {
   color: black;
   font-size: 15px;
   font-weight: 700;
-}
-
-#menu .monbouton.monbouton3 i {
-  color: white;
-  padding: 28px 34px 0px 41px;
-  font-size: 19px;
 }
 
 #menu .monbouton.monbouton3 > h2 {
@@ -979,12 +975,6 @@ aside:hover {
   font-weight: 700;
 }
 
-#menu .monbouton.monbouton4 i {
-  color: white;
-  padding: 28px 34px 0px 41px;
-  font-size: 19px;
-}
-
 #menu .monbouton.monbouton4 > h2 {
   font-size: 15px;
   margin: 5px;
@@ -1012,12 +1002,6 @@ aside:hover {
   color: black;
   font-size: 15px;
   font-weight: 700;
-}
-
-#menu .monbouton.monbouton5 i {
-  color: white;
-  padding: 28px 34px 0px 41px;
-  font-size: 19px;
 }
 
 #menu .monbouton.monbouton5 > h2 {
@@ -1049,12 +1033,6 @@ aside:hover {
   font-weight: 700;
 }
 
-#menu .monbouton.monbouton6 i {
-  color: white;
-  padding: 28px 34px 0px 41px;
-  font-size: 19px;
-}
-
 #menu .monbouton.monbouton6 > h2 {
   font-size: 15px;
   margin: 5px;
@@ -1082,12 +1060,6 @@ aside:hover {
   color: black;
   font-size: 15px;
   font-weight: 700;
-}
-
-#menu .monbouton.monbouton7 i {
-  color: white;
-  padding: 28px 34px 0px 41px;
-  font-size: 19px;
 }
 
 #menu .monbouton.monbouton7 > h2 {
@@ -1119,12 +1091,6 @@ aside:hover {
   font-weight: 700;
 }
 
-#menu .monbouton.monbouton8 i {
-  color: white;
-  padding: 28px 34px 0px 41px;
-  font-size: 19px;
-}
-
 #menu .monbouton.monbouton8 > h2 {
   font-size: 15px;
   margin: 5px;
@@ -1152,12 +1118,6 @@ aside:hover {
   color: black;
   font-size: 15px;
   font-weight: 700;
-}
-
-#menu .monbouton.monbouton9 i {
-  color: white;
-  padding: 28px 34px 0px 41px;
-  font-size: 19px;
 }
 
 #menu .monbouton.monbouton9 > h2 {
@@ -1189,12 +1149,6 @@ aside:hover {
   font-weight: 700;
 }
 
-#menu .monbouton.monbouton10 i {
-  color: white;
-  padding: 28px 34px 0px 41px;
-  font-size: 19px;
-}
-
 #menu .monbouton.monbouton10 > h2 {
   font-size: 15px;
   margin: 5px;
@@ -1212,39 +1166,12 @@ aside:hover {
   display: flex;
 }
 
-article,
-aside:hover {
-  -webkit-animation: slide-left 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-          animation: slide-left 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+#menu article:hover aside {
+  width: 59px;
+  padding: 20px;
 }
 
-@-webkit-keyframes slide-left {
-  0% {
-    -webkit-transform: translateX(50px);
-    transform: translateX(50px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateX(0px);
-    transform: translateX(0px);
-    opacity: 1;
-  }
-}
-
-@keyframes slide-left {
-  0% {
-    -webkit-transform: translateX(50px);
-    transform: translateX(50px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateX(0px);
-    transform: translateX(0px);
-    opacity: 1;
-  }
-}
-
-aside i {
+#menu article:hover aside i {
   -webkit-animation: rotation 0.5s ease-in-out both;
           animation: rotation 0.5s ease-in-out both;
 }
