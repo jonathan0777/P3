@@ -275,6 +275,8 @@ footer .logo2 {
   font-family: "Shrikhand", cursive;
   color: white;
   margin-bottom: 12px;
+  display: flex;
+  font-size: 23px;
 }
 footer .logo2 img {
   width: 100%;
@@ -423,9 +425,6 @@ header #page #logo {
   margin: 5px;
   font-weight: 600;
   display: flex;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 #menu > h2:hover {
@@ -461,7 +460,7 @@ aside {
   justify-content: space-between;
   /* margin: 0px 0px 10px 30px; */
   border-radius: 0 18px 18px 0;
-  background-color:#99e2d0;
+  background-color: #99e2d0;
   width: 0;
   padding: 20px 0;
   transition: 0.5s;
@@ -482,7 +481,7 @@ aside:hover {
   margin: 0px 0px;
   padding: 13px;
   border-radius: 29px;
-  border: 1px solid #ff79da;
+  border: 0px solid #ff79da;
   text-decoration: none;
   text-align: center;
   font-size: 14px;
@@ -641,7 +640,7 @@ $diminuertemps: 0.8s;
 @for $i from 1 through 10 {
   #menu .monbouton.monbouton#{$i} {
     animation-delay: $i * $diminuertemps;
-    width: 29%;
+    width: 100%;
   }
   #menu .monbouton.monbouton#{$i} a {
     color: black;
@@ -669,7 +668,6 @@ $diminuertemps: 0.8s;
   padding: 20px;
 }
 
-
 #menu article:hover aside i {
   animation: rotation 0.5s ease-in-out both;
 }
@@ -690,6 +688,31 @@ $diminuertemps: 0.8s;
   to { padding-left:200px}
 }
 */
+#menu .monbouton.monbouton4.p2 {
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu .monbouton.monbouton4.p2 h2 {
+  justify-content: center;
+  align-items: center;
+}
+
+#menu .monbouton.monbouton4.p2 h3 {
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 20px 20px 50px 20px;
+
+  font-size: 12px;
+  font-weight: 100;
+}
 
 @media screen and (min-width: 992px) {
   .etablissement {
@@ -707,4 +730,18 @@ $diminuertemps: 0.8s;
   .filtres {
     display: flex;
     justify-content: space-evenly;
-} }
+  }
+
+  @for $i from 1 through 10 {
+    #menu .monbouton.monbouton#{$i} {
+      width: 33%;
+    }
+
+    .footer {
+      display: flex;
+
+      justify-content: space-around;
+      padding: 20px;
+    }
+  }
+}

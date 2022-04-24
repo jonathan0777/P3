@@ -363,6 +363,10 @@ footer .logo2 {
   font-family: "Shrikhand", cursive;
   color: white;
   margin-bottom: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 23px;
 }
 
 footer .logo2 img {
@@ -556,9 +560,6 @@ header #page #logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 #menu > h2:hover {
@@ -624,7 +625,7 @@ aside:hover {
   margin: 0px 0px;
   padding: 13px;
   border-radius: 29px;
-  border: 1px solid #ff79da;
+  border: 0px solid #ff79da;
   text-decoration: none;
   text-align: center;
   font-size: 14px;
@@ -879,7 +880,7 @@ aside:hover {
 #menu .monbouton.monbouton1 {
   -webkit-animation-delay: 0.8s;
           animation-delay: 0.8s;
-  width: 29%;
+  width: 100%;
 }
 
 #menu .monbouton.monbouton1 a {
@@ -908,7 +909,7 @@ aside:hover {
 #menu .monbouton.monbouton2 {
   -webkit-animation-delay: 1.6s;
           animation-delay: 1.6s;
-  width: 29%;
+  width: 100%;
 }
 
 #menu .monbouton.monbouton2 a {
@@ -937,7 +938,7 @@ aside:hover {
 #menu .monbouton.monbouton3 {
   -webkit-animation-delay: 2.4s;
           animation-delay: 2.4s;
-  width: 29%;
+  width: 100%;
 }
 
 #menu .monbouton.monbouton3 a {
@@ -966,7 +967,7 @@ aside:hover {
 #menu .monbouton.monbouton4 {
   -webkit-animation-delay: 3.2s;
           animation-delay: 3.2s;
-  width: 29%;
+  width: 100%;
 }
 
 #menu .monbouton.monbouton4 a {
@@ -995,7 +996,7 @@ aside:hover {
 #menu .monbouton.monbouton5 {
   -webkit-animation-delay: 4s;
           animation-delay: 4s;
-  width: 29%;
+  width: 100%;
 }
 
 #menu .monbouton.monbouton5 a {
@@ -1024,7 +1025,7 @@ aside:hover {
 #menu .monbouton.monbouton6 {
   -webkit-animation-delay: 4.8s;
           animation-delay: 4.8s;
-  width: 29%;
+  width: 100%;
 }
 
 #menu .monbouton.monbouton6 a {
@@ -1053,7 +1054,7 @@ aside:hover {
 #menu .monbouton.monbouton7 {
   -webkit-animation-delay: 5.6s;
           animation-delay: 5.6s;
-  width: 29%;
+  width: 100%;
 }
 
 #menu .monbouton.monbouton7 a {
@@ -1082,7 +1083,7 @@ aside:hover {
 #menu .monbouton.monbouton8 {
   -webkit-animation-delay: 6.4s;
           animation-delay: 6.4s;
-  width: 29%;
+  width: 100%;
 }
 
 #menu .monbouton.monbouton8 a {
@@ -1111,7 +1112,7 @@ aside:hover {
 #menu .monbouton.monbouton9 {
   -webkit-animation-delay: 7.2s;
           animation-delay: 7.2s;
-  width: 29%;
+  width: 100%;
 }
 
 #menu .monbouton.monbouton9 a {
@@ -1140,7 +1141,7 @@ aside:hover {
 #menu .monbouton.monbouton10 {
   -webkit-animation-delay: 8s;
           animation-delay: 8s;
-  width: 29%;
+  width: 100%;
 }
 
 #menu .monbouton.monbouton10 a {
@@ -1204,6 +1205,49 @@ aside:hover {
   to { padding-left:200px}
 }
 */
+#menu .monbouton.monbouton4.p2 {
+  width: 80%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#menu .monbouton.monbouton4.p2 h2 {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#menu .monbouton.monbouton4.p2 h3 {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 20px 20px 50px 20px;
+  font-size: 12px;
+  font-weight: 100;
+}
+
 @media screen and (min-width: 992px) {
   .etablissement {
     display: -webkit-box;
@@ -1227,6 +1271,116 @@ aside:hover {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+  }
+  #menu .monbouton.monbouton1 {
+    width: 33%;
+  }
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 20px;
+  }
+  #menu .monbouton.monbouton2 {
+    width: 33%;
+  }
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 20px;
+  }
+  #menu .monbouton.monbouton3 {
+    width: 33%;
+  }
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 20px;
+  }
+  #menu .monbouton.monbouton4 {
+    width: 33%;
+  }
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 20px;
+  }
+  #menu .monbouton.monbouton5 {
+    width: 33%;
+  }
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 20px;
+  }
+  #menu .monbouton.monbouton6 {
+    width: 33%;
+  }
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 20px;
+  }
+  #menu .monbouton.monbouton7 {
+    width: 33%;
+  }
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 20px;
+  }
+  #menu .monbouton.monbouton8 {
+    width: 33%;
+  }
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 20px;
+  }
+  #menu .monbouton.monbouton9 {
+    width: 33%;
+  }
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 20px;
+  }
+  #menu .monbouton.monbouton10 {
+    width: 33%;
+  }
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
