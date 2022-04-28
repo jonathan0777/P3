@@ -99,10 +99,8 @@ header nav i {
   flex-direction: column;
 }
 .nombre {
-  /* position: absolute; */
   padding: 21px 0px 4px 0px;
   margin: 21px 0px 0px -12px;
-  border-radius: 2px solid black;
   border-radius: 45px;
   padding: 2px 7px;
   background: #9356dc;
@@ -258,10 +256,10 @@ i.fas.fa-heart {
 .restaurants p {
   color: black;
   margin: -20px 0px 0px 0px;
-   padding: 0 0px 30px 20px;
+  padding: 0 0px 30px 20px;
 }
 
- footer {
+footer {
   width: 100%;
   height: auto;
   background-color: #404040;
@@ -425,7 +423,7 @@ header #page #logo {
   border-bottom: 3px solid #99e2d0;
 }
 
-#menu  h3 {
+#menu h3 {
   font-size: 12px;
   font-weight: 100;
   margin: 5px;
@@ -436,9 +434,6 @@ header #page #logo {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-
-
-
 
 #menu .global h3 {
   font-size: 12px;
@@ -543,20 +538,10 @@ aside:hover {
 
 @keyframes color {
   0% {
-    filter: blur(1);
-  }
-  100% {
-    filter: blur(1);
-  }
-}
-@keyframes color {
-  0% {
     filter: brightness(1);
-    filter: blur(1);
   }
   99% {
     opacity: 0;
-    filter: blur(1);
   }
 }
 
@@ -629,8 +614,8 @@ aside:hover {
     opacity: 0;
   }
   100% {
-    -webkit-transform: translateY(4000);
-    transform: translateY(4000);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
     opacity: 1;
   }
 }
@@ -711,6 +696,11 @@ $diminuertemps: 0.8s;
 
   font-size: 12px;
   font-weight: 100;
+}
+.filtres h2 {
+  font-size: 15px;
+  padding: 0;
+  margin: 0;
 }
 
 @media screen and (min-width: 992px) {

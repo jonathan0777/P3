@@ -138,10 +138,8 @@ header nav i {
 }
 
 .nombre {
-  /* position: absolute; */
   padding: 21px 0px 4px 0px;
   margin: 21px 0px 0px -12px;
-  border-radius: 2px solid black;
   border-radius: 45px;
   padding: 2px 7px;
   background: #9356dc;
@@ -718,23 +716,11 @@ aside:hover {
 
 @-webkit-keyframes color {
   0% {
-    -webkit-filter: blur(1);
-            filter: blur(1);
+    -webkit-filter: brightness(1);
+            filter: brightness(1);
   }
-  100% {
-    -webkit-filter: blur(1);
-            filter: blur(1);
-  }
-}
-
-@keyframes color {
-  0% {
-    -webkit-filter: blur(1);
-            filter: blur(1);
-  }
-  100% {
-    -webkit-filter: blur(1);
-            filter: blur(1);
+  99% {
+    opacity: 0;
   }
 }
 
@@ -742,13 +728,9 @@ aside:hover {
   0% {
     -webkit-filter: brightness(1);
             filter: brightness(1);
-    -webkit-filter: blur(1);
-            filter: blur(1);
   }
   99% {
     opacity: 0;
-    -webkit-filter: blur(1);
-            filter: blur(1);
   }
 }
 
@@ -852,8 +834,8 @@ aside:hover {
     opacity: 0;
   }
   100% {
-    -webkit-transform: translateY(4000);
-    transform: translateY(4000);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
     opacity: 1;
   }
 }
@@ -870,8 +852,8 @@ aside:hover {
     opacity: 0;
   }
   100% {
-    -webkit-transform: translateY(4000);
-    transform: translateY(4000);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
     opacity: 1;
   }
 }
@@ -1215,6 +1197,12 @@ aside:hover {
   padding: 20px 20px 50px 20px;
   font-size: 12px;
   font-weight: 100;
+}
+
+.filtres h2 {
+  font-size: 15px;
+  padding: 0;
+  margin: 0;
 }
 
 @media screen and (min-width: 992px) {
