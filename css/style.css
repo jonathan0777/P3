@@ -506,22 +506,18 @@ header #page #logo {
 }
 
 .global {
-  /* width: 100%; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   margin: 0px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
 }
 
 #menu .monbouton a {
@@ -553,13 +549,13 @@ header #page #logo {
   width: 39px;
 }
 
-#menu .monbouton h2 {
+#menu .monbouton .global h2 {
   font-size: 15px;
   margin: 5px;
   font-weight: 600;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 #menu > h2:hover {
@@ -570,21 +566,24 @@ header #page #logo {
   font-size: 12px;
   font-weight: 100;
   margin: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+}
+
+#menu .global h3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#menu .global h3 {
+  font-size: 12px;
+  font-weight: 100;
+  margin: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 #menu .prix {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: end;
-  -webkit-box-pack: end;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-  -ms-flex-direction: row-reverse;
-  flex-direction: row-reverse;
   padding: 20px;
 }
 
@@ -901,9 +900,6 @@ aside:hover {
   font-size: 15px;
   margin: 5px;
   font-weight: 600;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 #menu .monbouton.monbouton2 {
@@ -930,9 +926,6 @@ aside:hover {
   font-size: 15px;
   margin: 5px;
   font-weight: 600;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 #menu .monbouton.monbouton3 {
@@ -959,9 +952,6 @@ aside:hover {
   font-size: 15px;
   margin: 5px;
   font-weight: 600;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 #menu .monbouton.monbouton4 {
@@ -988,9 +978,6 @@ aside:hover {
   font-size: 15px;
   margin: 5px;
   font-weight: 600;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 #menu .monbouton.monbouton5 {
@@ -1017,9 +1004,6 @@ aside:hover {
   font-size: 15px;
   margin: 5px;
   font-weight: 600;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 #menu .monbouton.monbouton6 {
@@ -1046,9 +1030,6 @@ aside:hover {
   font-size: 15px;
   margin: 5px;
   font-weight: 600;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 #menu .monbouton.monbouton7 {
@@ -1075,9 +1056,6 @@ aside:hover {
   font-size: 15px;
   margin: 5px;
   font-weight: 600;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 #menu .monbouton.monbouton8 {
@@ -1104,9 +1082,6 @@ aside:hover {
   font-size: 15px;
   margin: 5px;
   font-weight: 600;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 #menu .monbouton.monbouton9 {
@@ -1133,9 +1108,6 @@ aside:hover {
   font-size: 15px;
   margin: 5px;
   font-weight: 600;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 #menu .monbouton.monbouton10 {
@@ -1162,9 +1134,6 @@ aside:hover {
   font-size: 15px;
   margin: 5px;
   font-weight: 600;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 #menu article:hover aside {
